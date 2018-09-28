@@ -68,6 +68,11 @@ namespace WindowsFormsApplication1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             DB.ExecuteNonQuery("insert into students values ('hamidi', 2)");
         }
 	}

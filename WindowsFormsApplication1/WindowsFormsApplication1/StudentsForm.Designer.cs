@@ -1405,6 +1405,7 @@
             this.button2.TabIndex = 88;
             this.button2.Text = "ذخیره کردن";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox32
             // 
@@ -1835,7 +1836,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(648, 989);
+            this.button3.Location = new System.Drawing.Point(383, 978);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 57;
