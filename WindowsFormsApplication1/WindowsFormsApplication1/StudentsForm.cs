@@ -68,10 +68,7 @@ namespace WindowsFormsApplication1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var sql = "insert into students values ('hamidi', 2)";
-            var parent = Parent as Menu;
-            var cmd = new SQLiteCommand(sql, parent.DBConnection);
-            cmd.ExecuteNonQuery();
+            DB.ExecuteNonQuery("insert into students values ('hamidi', 2)");
         }
 	}
 }
