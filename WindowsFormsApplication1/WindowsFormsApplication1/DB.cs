@@ -28,26 +28,43 @@ hypothyroid boolean,
 prostate_enlargement boolean,
 cva boolean,
 bile_duct_problem boolean,
-anxiety
-mi
-dvt
-gout
-ibs
-pancreatitis
-physical_disability
-ihd
-heart_valve_problems
-asthma
-ms
-ibd
-ptsd
-anemia
-stent
-diabetes
-copd
-epilepsy
-fatty_liver
-
+anxiety boolean,
+mi boolean,
+dvt boolean,
+gout boolean,
+ibs boolean,
+pancreatitis boolean,
+physical_disability boolean,
+ihd boolean,
+heart_valve_problems boolean,
+asthma boolean,
+ms boolean,
+ibd boolean,
+ptsd boolean,
+anemia boolean,
+stent boolean,
+diabetes boolean,
+copd boolean,
+epilepsy boolean,
+fatty_liver boolean,
+obsession boolean,
+thalassemia boolean,
+cabg boolean,
+hyperlipidemia boolean,
+kidney stone boolean,
+tia boolean,
+hepatitis boolean,
+depression boolean,
+malignancy boolean,
+malignancy_type varchar(40),
+others varchar(120),
+surgical_record_and_hospitalization varchar(40),
+drugs_used varchar(120),
+height integer,
+weight integer,
+bmi integer,
+blood_pressure integer,
+blood_group_rh 
             )");
        }
 
