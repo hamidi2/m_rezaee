@@ -19,12 +19,24 @@ namespace WindowsFormsApplication1
 
         private void List_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
+            comboBox1.SelectedIndex = 1;
+			comboBox1.Enabled = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1.DataSource = DB.ExecuteScalar("select Name from students");
+			try
+			{
+				var data = DB.ExecuteScalar("select name from students");
+				string firstColumn = null;
+				if (data != null)
+					firstColumn = data.ToString();
+				listBox1.DataSource = data;
+			}
+			catch
+			{
+				throw;
+			}
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,8 +44,16 @@ namespace WindowsFormsApplication1
             if (comboBox1.SelectedIndex == 0)
                 new TeachersForm().Show();
             else
-                new StudentsForm().Show();
+                new StudentsForm2().ShowDialog(this);
         }
+
+		private void List_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Escape)
+			{
+				this.Close();
+			}
+		}
 
     }
 }
