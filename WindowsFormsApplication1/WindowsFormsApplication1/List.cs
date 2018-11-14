@@ -44,7 +44,8 @@ namespace WindowsFormsApplication1
             if (comboBox1.SelectedIndex == 0)
                 new TeachersForm().Show();
             else
-                new StudentsForm2().ShowDialog(this);
+                //new StudentsForm2().ShowDialog(this);
+	            new StudentsForm().ShowDialog(this);
         }
 
 		private void List_KeyDown(object sender, KeyEventArgs e)
