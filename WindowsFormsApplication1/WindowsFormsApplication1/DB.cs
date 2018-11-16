@@ -90,16 +90,22 @@ namespace WindowsFormsApplication1
 			);
 		}
 
+		static public int ExecuteNonQuery(string query)
+		{
+			var cmd = new SQLiteCommand(query, dbConn);
+			return cmd.ExecuteNonQuery();
+		}
+
 		static public object ExecuteScalar(string query)
 		{
 			var cmd = new SQLiteCommand(query, dbConn);
 			return cmd.ExecuteScalar();
 		}
 
-		static public int ExecuteNonQuery(string query)
+		static public SQLiteDataReader ExecuteReader(string query)
 		{
 			var cmd = new SQLiteCommand(query, dbConn);
-			return cmd.ExecuteNonQuery();
+			return cmd.ExecuteReader();
 		}
 	}
 }

@@ -122,7 +122,7 @@ namespace WindowsFormsApplication2
 
 		private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
 		{
-			e.
+			//e.
 		}
 	}
 }

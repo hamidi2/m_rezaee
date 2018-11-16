@@ -27,11 +27,14 @@ namespace WindowsFormsApplication1
         {
 			try
 			{
-				var data = DB.ExecuteScalar("select name from students");
-				string firstColumn = null;
-				if (data != null)
-					firstColumn = data.ToString();
-				listBox1.DataSource = data;
+				var reader = DB.ExecuteReader("select * from students");
+				var names = new List<string>();
+				if (reader.HasRows)
+				{
+					while (reader.Read())
+						names.Add(reader["name"].ToString());
+				}
+				listBox1.DataSource = names;
 			}
 			catch
 			{
@@ -54,6 +57,21 @@ namespace WindowsFormsApplication1
 			{
 				this.Close();
 			}
+		}
+
+		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			btnEdit.Enabled = btnRemove.Enabled = listBox1.Items.Count != 0;
+		}
+
+		private void btnEdit_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnRemove_Click(object sender, EventArgs e)
+		{
+
 		}
 
     }
