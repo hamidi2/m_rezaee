@@ -12,43 +12,43 @@ namespace WindowsFormsApplication2
 {
 	public partial class Form1 : Form
 	{
-		enum FieldType
-		{
-			invalidType,
-			boolean,
-			integer,
-			real,
-			character,
-			varchar,
-			text,
-		}
+		//enum FieldType
+		//{
+		//    invalidType,
+		//    boolean,
+		//    integer,
+		//    real,
+		//    character,
+		//    varchar,
+		//    text,
+		//}
 
-		static FieldType ToFieldType(string name)
-		{
-			switch (name)
-			{
-				case "boolean":
-					return FieldType.boolean;
-				case "integer":
-					return FieldType.integer;
-				case "real":
-					return FieldType.real;
-				case "character":
-					return FieldType.character;
-				case "varchar":
-					return FieldType.varchar;
-				case "text":
-					return FieldType.text;
-				default:
-					Debug.Assert(false);
-					return FieldType.invalidType;
-			}
-		}
+		//static FieldType ToFieldType(string name)
+		//{
+		//    switch (name)
+		//    {
+		//        case "boolean":
+		//            return FieldType.boolean;
+		//        case "integer":
+		//            return FieldType.integer;
+		//        case "real":
+		//            return FieldType.real;
+		//        case "character":
+		//            return FieldType.character;
+		//        case "varchar":
+		//            return FieldType.varchar;
+		//        case "text":
+		//            return FieldType.text;
+		//        default:
+		//            Debug.Assert(false);
+		//            return FieldType.invalidType;
+		//    }
+		//}
 
 		class Field
 		{
 			public string Name { get; set; }
-			public FieldType Type { get; set; }
+			public string Type { get; set; }
 			public int Len { get; set; }
 		}
 
@@ -70,7 +70,7 @@ namespace WindowsFormsApplication2
 			tableLayoutPanel1.RowStyles[1].Height = cbTables.Height + 6;
 			tableLayoutPanel1.RowStyles[1].SizeType = SizeType.Absolute;
 			var tables = new List<Table>();
-			var reader = DB.ExecuteReader("SELECT * FROM sqlite_master where type='table'");
+			var reader = DB.ExecuteReader("select * from sqlite_master where type='table'");
 			while (reader.Read())
 			{
 				var sql = reader["sql"].ToString();
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication2
 				{
 					var field = new Field();
 					field.Name = parts[i++];
-					field.Type = ToFieldType(parts[i++]);
+					field.Type = parts[i++];
 					if (i < parts.Length)
 					{
 						int len;
@@ -103,7 +103,10 @@ namespace WindowsFormsApplication2
 				tables.Add(table);
 			}
 			cbTables.DataSource = tables;
+			_tables.AddRange(tables);
 		}
+
+		private List<Table> _tables = new List<Table>();
 
 		private void Form1_KeyDown(object sender, KeyEventArgs e)
 		{
@@ -120,9 +123,30 @@ namespace WindowsFormsApplication2
 			dataGridView1.DataSource = table.Fields;
 		}
 
-		private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+		private object _oldValue;
+
+		private void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
 		{
-			//e.
+			_oldValue = dataGridView1[e.ColumnIndex, e.RowIndex].Value;
+		}
+
+		private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+		{
+			var newValue = dataGridView1[e.ColumnIndex, e.RowIndex].Value;
+			if (newValue == _oldValue)
+				return;
+			switch (e.ColumnIndex)
+			{
+				case 0:  // Name
+					DB.ExecuteNonQuery(string.Format("alter table {0} rename {1} to {2};", cbTables.Text, _oldValue, newValue));
+					break;
+				case 1:  // Type
+					MessageBox.Show("can't modify column type.");
+					break;
+				case 2:  // Len
+					MessageBox.Show("can't modify column type.");
+					break;
+			}
 		}
 	}
 }

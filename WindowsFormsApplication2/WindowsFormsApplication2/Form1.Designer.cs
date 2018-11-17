@@ -30,8 +30,8 @@
 		{
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.label1 = new System.Windows.Forms.Label();
 			this.cbTables = new System.Windows.Forms.ComboBox();
+			this.label1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
@@ -45,7 +45,8 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(480, 149);
 			this.dataGridView1.TabIndex = 2;
-			this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+			this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView1_CellBeginEdit);
+			this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
 			// 
 			// tableLayoutPanel1
 			// 
@@ -64,17 +65,6 @@
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(486, 487);
 			this.tableLayoutPanel1.TabIndex = 3;
 			// 
-			// label1
-			// 
-			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(3, 145);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(480, 13);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Tables:";
-			// 
 			// cbTables
 			// 
 			this.cbTables.DisplayMember = "Name";
@@ -86,6 +76,17 @@
 			this.cbTables.Size = new System.Drawing.Size(480, 21);
 			this.cbTables.TabIndex = 0;
 			this.cbTables.SelectedIndexChanged += new System.EventHandler(this.cbTables_SelectedIndexChanged);
+			// 
+			// label1
+			// 
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(3, 145);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(480, 13);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Tables:";
 			// 
 			// Form1
 			// 
