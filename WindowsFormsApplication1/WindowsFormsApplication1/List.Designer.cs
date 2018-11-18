@@ -56,7 +56,6 @@
 			this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.listBox1.Size = new System.Drawing.Size(492, 303);
 			this.listBox1.TabIndex = 1;
-			this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
 			// 
 			// btnAdd
 			// 
@@ -66,7 +65,7 @@
 			this.btnAdd.TabIndex = 2;
 			this.btnAdd.Text = "افزودن";
 			this.btnAdd.UseVisualStyleBackColor = true;
-			this.btnAdd.Click += new System.EventHandler(this.button1_Click);
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnEdit
 			// 

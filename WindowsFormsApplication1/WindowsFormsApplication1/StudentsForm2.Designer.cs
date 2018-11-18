@@ -129,6 +129,7 @@
 			this.ctrl_weight.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_weight.TabIndex = 11;
 			this.ctrl_weight.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+			this.ctrl_weight.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_weight_Validating);
 			// 
 			// label8
 			// 
@@ -146,6 +147,7 @@
 			this.ctrl_height.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_height.TabIndex = 9;
 			this.ctrl_height.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			this.ctrl_height.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_height_Validating);
 			// 
 			// ctrl_food_and_drug_allergies
 			// 

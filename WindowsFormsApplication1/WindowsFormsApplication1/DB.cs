@@ -8,16 +8,16 @@ namespace WindowsFormsApplication1
 {
 	class DB
 	{
-		static SQLiteConnection dbConn;
-		static public SQLiteConnection DBConnection
+		static SQLiteConnection conn;
+		static public SQLiteConnection Connection
 		{
-			get { return dbConn; }
+			get { return conn; }
 		}
 
 		static DB()
 		{
-			dbConn = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
-			dbConn.Open();
+			conn = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
+			conn.Open();
 			//            ExecuteNonQuery(@"create table if not exists teachers (\
 			//name varchar(40),\
 			//surname varchar(40),\
@@ -68,9 +68,9 @@ namespace WindowsFormsApplication1
 			//            )");
 			ExecuteNonQuery("create table if not exists students (" +
 				//"id integer primary key autoincrement,"+
+							"national_id character(10)," +
 				"name varchar(40)," +
-				"surname varchar(40)," +
-				"national_id character(10)," +
+				//"surname varchar(40)," +
 				"grade integer," +
 				"food_and_drug_allergies varchar(120)," +
 				"height real," +
@@ -92,19 +92,19 @@ namespace WindowsFormsApplication1
 
 		static public int ExecuteNonQuery(string query)
 		{
-			var cmd = new SQLiteCommand(query, dbConn);
+			var cmd = new SQLiteCommand(query, conn);
 			return cmd.ExecuteNonQuery();
 		}
 
 		static public object ExecuteScalar(string query)
 		{
-			var cmd = new SQLiteCommand(query, dbConn);
+			var cmd = new SQLiteCommand(query, conn);
 			return cmd.ExecuteScalar();
 		}
 
 		static public SQLiteDataReader ExecuteReader(string query)
 		{
-			var cmd = new SQLiteCommand(query, dbConn);
+			var cmd = new SQLiteCommand(query, conn);
 			return cmd.ExecuteReader();
 		}
 	}

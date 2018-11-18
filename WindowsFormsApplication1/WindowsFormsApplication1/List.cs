@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Diagnostics;
 
 namespace WindowsFormsApplication1
 {
@@ -25,54 +26,45 @@ namespace WindowsFormsApplication1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-			try
-			{
-				var reader = DB.ExecuteReader("select * from students");
-				var names = new List<string>();
-				if (reader.HasRows)
-				{
-					while (reader.Read())
-						names.Add(reader["name"].ToString());
-				}
-				listBox1.DataSource = names;
-			}
-			catch
-			{
-				throw;
-			}
-        }
+			var cmd = new SQLiteCommand("select * from students", DB.Connection);
+			var ad = new SQLiteDataAdapter(cmd);
+			var dt = new DataTable();
+			ad.Fill(dt);
+			listBox1.DataSource = dt;
+			listBox1.DisplayMember = "name";
+			btnEdit.Enabled = btnRemove.Enabled = listBox1.Items.Count != 0;
+		}
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedIndex == 0)
-                new TeachersForm().Show();
-            else
-                //new StudentsForm2().ShowDialog(this);
-	            new StudentsForm().ShowDialog(this);
-        }
+		private void btnAdd_Click(object sender, EventArgs e)
+		{
+			Debug.Assert(listBox1.DataSource is DataTable);
+			var dt = listBox1.DataSource as DataTable;
+			dt.Rows.Add();
+			btnEdit.Enabled = btnRemove.Enabled = dt.Rows.Count != 0;
+		}
+
+		private void btnEdit_Click(object sender, EventArgs e)
+		{
+			Debug.Assert(listBox1.SelectedItem is DataRowView);
+			new StudentsForm2(listBox1.SelectedItem as DataRowView).ShowDialog(this);
+		}
+
+		private void btnRemove_Click(object sender, EventArgs e)
+		{
+			Debug.Assert(listBox1.DataSource is DataTable);
+			var dt = listBox1.DataSource as DataTable;
+			dt.Rows.RemoveAt(listBox1.SelectedIndex);
+			btnEdit.Enabled = btnRemove.Enabled = dt.Rows.Count != 0;
+		}
 
 		private void List_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode == Keys.Escape)
 			{
-				this.Close();
+				Close();
 			}
-		}
-
-		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			btnEdit.Enabled = btnRemove.Enabled = listBox1.Items.Count != 0;
-		}
-
-		private void btnEdit_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void btnRemove_Click(object sender, EventArgs e)
-		{
-
 		}
 
     }
 }
+
