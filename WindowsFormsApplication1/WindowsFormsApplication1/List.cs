@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Diagnostics;
@@ -13,48 +8,56 @@ namespace WindowsFormsApplication1
 {
     public partial class List : Form
     {
-        public List()
+	    private SQLiteDataAdapter _ad;
+		private readonly DataTable _dt = new DataTable();
+
+		public List()
         {
             InitializeComponent();
-        }
-
-        private void List_Load(object sender, EventArgs e)
-        {
-            comboBox1.SelectedIndex = 1;
-			comboBox1.Enabled = false;
-        }
+			comboBox1.SelectedIndex = 1;
+		}
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-			var cmd = new SQLiteCommand("select * from students", DB.Connection);
-			var ad = new SQLiteDataAdapter(cmd);
-			var dt = new DataTable();
-			ad.Fill(dt);
-			listBox1.DataSource = dt;
+			_ad = new SQLiteDataAdapter("select * from students", DB.Connection);
+			var builder = new SQLiteCommandBuilder(_ad);
+			_ad.DeleteCommand = builder.GetDeleteCommand();
+			_ad.InsertCommand = builder.GetInsertCommand();
+			_ad.SelectCommand = builder.GetUpdateCommand();
+			_ad.Fill(_dt);
+	        btnEdit.Enabled = btnRemove.Enabled = _dt.Rows.Count != 0;
+			listBox1.DataSource = _dt;
 			listBox1.DisplayMember = "name";
-			btnEdit.Enabled = btnRemove.Enabled = listBox1.Items.Count != 0;
 		}
 
+	    void Update()
+	    {
+			_ad.Update(_dt);
+			btnEdit.Enabled = btnRemove.Enabled = _dt.Rows.Count != 0;
+		}
+	
 		private void btnAdd_Click(object sender, EventArgs e)
 		{
-			Debug.Assert(listBox1.DataSource is DataTable);
-			var dt = listBox1.DataSource as DataTable;
-			dt.Rows.Add();
-			btnEdit.Enabled = btnRemove.Enabled = dt.Rows.Count != 0;
+			var row = _dt.Rows.Add();
+			row["national_id"] = 1;
+			Update();
+		}
+
+		private void btnRemove_Click(object sender, EventArgs e)
+		{
+			_dt.Rows.RemoveAt(listBox1.SelectedIndex);
+			Update();
 		}
 
 		private void btnEdit_Click(object sender, EventArgs e)
 		{
 			Debug.Assert(listBox1.SelectedItem is DataRowView);
-			new StudentsForm2(listBox1.SelectedItem as DataRowView).ShowDialog(this);
-		}
-
-		private void btnRemove_Click(object sender, EventArgs e)
-		{
-			Debug.Assert(listBox1.DataSource is DataTable);
-			var dt = listBox1.DataSource as DataTable;
-			dt.Rows.RemoveAt(listBox1.SelectedIndex);
-			btnEdit.Enabled = btnRemove.Enabled = dt.Rows.Count != 0;
+			var f = new StudentsForm2(listBox1.SelectedItem as DataRowView);
+			if (f.ShowDialog(this) == DialogResult.OK)
+			{
+				_ad.Update(_dt);
+				Update();
+			}
 		}
 
 		private void List_KeyDown(object sender, KeyEventArgs e)

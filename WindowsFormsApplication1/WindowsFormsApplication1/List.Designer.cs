@@ -37,6 +37,8 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox1.Enabled = false;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "معلمان",
@@ -69,6 +71,7 @@
 			// 
 			// btnEdit
 			// 
+			this.btnEdit.Enabled = false;
 			this.btnEdit.Location = new System.Drawing.Point(93, 348);
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(75, 23);
@@ -79,6 +82,7 @@
 			// 
 			// btnRemove
 			// 
+			this.btnRemove.Enabled = false;
 			this.btnRemove.Location = new System.Drawing.Point(174, 348);
 			this.btnRemove.Name = "btnRemove";
 			this.btnRemove.Size = new System.Drawing.Size(75, 23);
@@ -103,10 +107,8 @@
 			this.RightToLeftLayout = true;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "List";
-			this.Load += new System.EventHandler(this.List_Load);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.List_KeyDown);
 			this.ResumeLayout(false);
-
         }
 
         #endregion

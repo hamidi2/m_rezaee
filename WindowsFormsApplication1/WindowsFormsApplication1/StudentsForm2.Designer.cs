@@ -41,8 +41,8 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
+			this.ctrl_weight_label = new System.Windows.Forms.Label();
+			this.ctrl_height_label = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.ctrl_grade = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -78,8 +78,8 @@
 			this.tabPage1.Controls.Add(this.label7);
 			this.tabPage1.Controls.Add(this.label6);
 			this.tabPage1.Controls.Add(this.label5);
-			this.tabPage1.Controls.Add(this.label4);
-			this.tabPage1.Controls.Add(this.label3);
+			this.tabPage1.Controls.Add(this.ctrl_weight_label);
+			this.tabPage1.Controls.Add(this.ctrl_height_label);
 			this.tabPage1.Controls.Add(this.label2);
 			this.tabPage1.Controls.Add(this.ctrl_grade);
 			this.tabPage1.Controls.Add(this.label1);
@@ -185,23 +185,23 @@
 			this.label5.TabIndex = 5;
 			this.label5.Text = "BMI:";
 			// 
-			// label4
+			// ctrl_weight_label
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(744, 174);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(28, 13);
-			this.label4.TabIndex = 4;
-			this.label4.Text = "وزن:";
+			this.ctrl_weight_label.AutoSize = true;
+			this.ctrl_weight_label.Location = new System.Drawing.Point(744, 174);
+			this.ctrl_weight_label.Name = "ctrl_weight_label";
+			this.ctrl_weight_label.Size = new System.Drawing.Size(28, 13);
+			this.ctrl_weight_label.TabIndex = 4;
+			this.ctrl_weight_label.Text = "وزن:";
 			// 
-			// label3
+			// ctrl_height_label
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(970, 174);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(21, 13);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "قد:";
+			this.ctrl_height_label.AutoSize = true;
+			this.ctrl_height_label.Location = new System.Drawing.Point(970, 174);
+			this.ctrl_height_label.Name = "ctrl_height_label";
+			this.ctrl_height_label.Size = new System.Drawing.Size(21, 13);
+			this.ctrl_height_label.TabIndex = 3;
+			this.ctrl_height_label.Text = "قد:";
 			// 
 			// label2
 			// 
@@ -303,8 +303,8 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label ctrl_weight_label;
+		private System.Windows.Forms.Label ctrl_height_label;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button ctrl_save;
 	}

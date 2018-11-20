@@ -76,43 +76,32 @@ namespace WindowsFormsApplication1
 			//}
 		}
 
-		//bool Validate()
-		//{
-		//    int h;
-		//    if (!int.TryParse(ctrl_height.Text, out h))
-		//    {
-		//        MessageBox.Show("قد را اصلاح کنید");
-		//        return;
-		//    }
-		//    int w;
-		//    if (!int.TryParse(ctrl_weight.Text, out w))
-		//    {
-		//        MessageBox.Show("وزن را اصلاح کنید");
-		//        return;
-		//    }
-		//}
-	
 		private void save_Click(object sender, EventArgs e)
 		{
-			if (Validate())
+			if (ValidateChildren())
+			{
 				Save();
-			Close();
+				DialogResult = DialogResult.OK;
+				Close();
+			}
 		}
 
 		private void ctrl_height_Validating(object sender, CancelEventArgs e)
 		{
 			int h;
-			if (e.Cancel = !int.TryParse(ctrl_height.Text, out h))
-				MessageBox.Show("قد را اصلاح کنید");
-			_student["Height"] = h;
+			e.Cancel = !int.TryParse(ctrl_height.Text, out h);
+			ctrl_height_label.ForeColor = e.Cancel ? Color.Red : Color.Black;
+			if (!e.Cancel)
+				_student["height"] = h;
 		}
 
 		private void ctrl_weight_Validating(object sender, CancelEventArgs e)
 		{
 			int w;
-			if (e.Cancel = !int.TryParse(ctrl_height.Text, out w))
-				MessageBox.Show("وزن را اصلاح کنید");
-			_student["Width"] = w;
+			e.Cancel = !int.TryParse(ctrl_weight.Text, out w);
+			ctrl_weight_label.ForeColor = e.Cancel ? Color.Red : Color.Black;
+			if (!e.Cancel)
+				_student["weight"] = w;
 		}
 	}
 }
