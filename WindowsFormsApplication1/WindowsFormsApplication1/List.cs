@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace WindowsFormsApplication1
 {
@@ -14,7 +15,23 @@ namespace WindowsFormsApplication1
 		public List()
         {
             InitializeComponent();
-			comboBox1.SelectedIndex = 1;
+			var dic = new Dictionary<string, string>();
+			dic["students"] = "دانش آموزان";
+			dic["teachers"] = "معلمان";
+			var list = new List<string>();
+			var reader = DB.ExecuteReader("select name from sqlite_master where type='table'");
+			while (reader.Read())
+			{
+				var name = reader[0] as string;
+				list.Add(dic[name] ?? name);
+			}
+			comboBox1.DataSource = list;
+			//var ad = new SQLiteDataAdapter("select * from sqlite_master where type='table'", DB.Connection);
+			//var dt = new DataTable();
+			//ad.Fill(dt);
+			//comboBox1.DataSource = dt;
+			//comboBox1.DisplayMember = "name";
+			//comboBox1.SelectedIndex = 1;
 		}
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

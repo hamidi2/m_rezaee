@@ -38,7 +38,6 @@
 			// comboBox1
 			// 
 			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.Enabled = false;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "معلمان",
@@ -109,6 +108,7 @@
 			this.Text = "List";
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.List_KeyDown);
 			this.ResumeLayout(false);
+
         }
 
         #endregion
