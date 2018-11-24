@@ -16,22 +16,16 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
 			var dic = new Dictionary<string, string>();
-			dic["students"] = "دانش آموزان";
+			//dic["students"] = "دانش آموزان";
 			dic["teachers"] = "معلمان";
 			var list = new List<string>();
 			var reader = DB.ExecuteReader("select name from sqlite_master where type='table'");
 			while (reader.Read())
 			{
 				var name = reader[0] as string;
-				list.Add(dic[name] ?? name);
+				list.Add(dic.ContainsKey(name) ? dic[name] : name);
 			}
 			comboBox1.DataSource = list;
-			//var ad = new SQLiteDataAdapter("select * from sqlite_master where type='table'", DB.Connection);
-			//var dt = new DataTable();
-			//ad.Fill(dt);
-			//comboBox1.DataSource = dt;
-			//comboBox1.DisplayMember = "name";
-			//comboBox1.SelectedIndex = 1;
 		}
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -55,8 +49,7 @@ namespace WindowsFormsApplication1
 	
 		private void btnAdd_Click(object sender, EventArgs e)
 		{
-			var row = _dt.Rows.Add();
-			row["national_id"] = 1;
+			_dt.Rows.Add();
 			Update();
 		}
 
