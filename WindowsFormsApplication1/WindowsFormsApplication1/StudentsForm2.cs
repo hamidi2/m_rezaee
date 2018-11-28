@@ -103,6 +103,61 @@ namespace WindowsFormsApplication1
 			if (!e.Cancel)
 				_student["weight"] = w;
 		}
+
+		private void textBox8_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox7_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox6_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox5_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox4_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label28_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label27_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label26_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label25_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label12_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void checkBox14_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
 
