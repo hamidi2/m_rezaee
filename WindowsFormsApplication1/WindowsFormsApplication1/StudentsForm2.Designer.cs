@@ -30,6 +30,72 @@
 		{
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.ctrl_behavioral_disorders = new System.Windows.Forms.CheckBox();
+			this.ctrl_anxiety = new System.Windows.Forms.CheckBox();
+			this.ctrl_phobia = new System.Windows.Forms.CheckBox();
+			this.ctrl_personality_disorder = new System.Windows.Forms.CheckBox();
+			this.ctrl_schizophrenia = new System.Windows.Forms.CheckBox();
+			this.ctrl_learning_disorders = new System.Windows.Forms.CheckBox();
+			this.label38 = new System.Windows.Forms.Label();
+			this.textBox17 = new System.Windows.Forms.TextBox();
+			this.ctrl_food_and_drug_allergies = new System.Windows.Forms.TextBox();
+			this.ctrl_genu_varum = new System.Windows.Forms.CheckBox();
+			this.ctrl_genu_valgum = new System.Windows.Forms.CheckBox();
+			this.ctrl_flat_foot = new System.Windows.Forms.CheckBox();
+			this.ctrl_scoliosis = new System.Windows.Forms.CheckBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.ctrl_goiter = new System.Windows.Forms.CheckBox();
+			this.ctrl_ocd = new System.Windows.Forms.CheckBox();
+			this.ctrl_chondromalacia = new System.Windows.Forms.CheckBox();
+			this.ctrl_anemia = new System.Windows.Forms.CheckBox();
+			this.label36 = new System.Windows.Forms.Label();
+			this.ctrl_adhd = new System.Windows.Forms.CheckBox();
+			this.ctrl_nail_problem = new System.Windows.Forms.CheckBox();
+			this.ctrl_pediculosis = new System.Windows.Forms.CheckBox();
+			this.ctrl_adhd_add = new System.Windows.Forms.CheckBox();
+			this.ctrl_depression = new System.Windows.Forms.CheckBox();
+			this.ctrl_hair_problem = new System.Windows.Forms.CheckBox();
+			this.ctrl_obesity = new System.Windows.Forms.CheckBox();
+			this.ctrl_dermatitis = new System.Windows.Forms.CheckBox();
+			this.ctrl_practical_obsession = new System.Windows.Forms.CheckBox();
+			this.ctrl_ear_desc = new System.Windows.Forms.TextBox();
+			this.ctrl_ear = new System.Windows.Forms.CheckBox();
+			this.ctrl_ear_label = new System.Windows.Forms.Label();
+			this.label35 = new System.Windows.Forms.Label();
+			this.ctrl_elft_eye_desc = new System.Windows.Forms.TextBox();
+			this.ctrl_left_eye = new System.Windows.Forms.CheckBox();
+			this.ctrl_left_eye_label = new System.Windows.Forms.Label();
+			this.label33 = new System.Windows.Forms.Label();
+			this.ctrl_right_eye_desc = new System.Windows.Forms.TextBox();
+			this.ctrl_right_eye = new System.Windows.Forms.CheckBox();
+			this.ctrl_right_eye_label = new System.Windows.Forms.Label();
+			this.label30 = new System.Windows.Forms.Label();
+			this.ctrl_alt = new System.Windows.Forms.TextBox();
+			this.ctrl_ast = new System.Windows.Forms.TextBox();
+			this.ctrl_hb = new System.Windows.Forms.TextBox();
+			this.ctrl_fbs = new System.Windows.Forms.TextBox();
+			this.ctrl_tsh = new System.Windows.Forms.TextBox();
+			this.ctrl_tg = new System.Windows.Forms.TextBox();
+			this.ctrl_ldl = new System.Windows.Forms.TextBox();
+			this.ctrl_hdl = new System.Windows.Forms.TextBox();
+			this.ctrl_ldl_sdl_ratio = new System.Windows.Forms.TextBox();
+			this.label29 = new System.Windows.Forms.Label();
+			this.label28 = new System.Windows.Forms.Label();
+			this.label27 = new System.Windows.Forms.Label();
+			this.label26 = new System.Windows.Forms.Label();
+			this.label25 = new System.Windows.Forms.Label();
+			this.label24 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.ctrl_blood_group_rh = new System.Windows.Forms.TextBox();
+			this.ctrl_national_id = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.ctrl_name = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.ctrl_sbp = new System.Windows.Forms.TextBox();
 			this.ctrl_dbp = new System.Windows.Forms.TextBox();
 			this.ctrl_bmi = new System.Windows.Forms.TextBox();
@@ -46,75 +112,9 @@
 			this.ctrl_grade = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.ctrl_save = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label24 = new System.Windows.Forms.Label();
-			this.label25 = new System.Windows.Forms.Label();
-			this.label26 = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.label29 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.label30 = new System.Windows.Forms.Label();
-			this.label31 = new System.Windows.Forms.Label();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.textBox14 = new System.Windows.Forms.TextBox();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
-			this.label32 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
-			this.textBox15 = new System.Windows.Forms.TextBox();
-			this.checkBox3 = new System.Windows.Forms.CheckBox();
-			this.label34 = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.checkBox4 = new System.Windows.Forms.CheckBox();
-			this.checkBox5 = new System.Windows.Forms.CheckBox();
-			this.checkBox6 = new System.Windows.Forms.CheckBox();
-			this.checkBox7 = new System.Windows.Forms.CheckBox();
-			this.checkBox8 = new System.Windows.Forms.CheckBox();
-			this.checkBox9 = new System.Windows.Forms.CheckBox();
-			this.checkBox10 = new System.Windows.Forms.CheckBox();
-			this.checkBox11 = new System.Windows.Forms.CheckBox();
-			this.checkBox12 = new System.Windows.Forms.CheckBox();
-			this.checkBox13 = new System.Windows.Forms.CheckBox();
-			this.checkBox14 = new System.Windows.Forms.CheckBox();
-			this.checkBox15 = new System.Windows.Forms.CheckBox();
-			this.checkBox16 = new System.Windows.Forms.CheckBox();
-			this.label36 = new System.Windows.Forms.Label();
-			this.checkBox17 = new System.Windows.Forms.CheckBox();
-			this.checkBox18 = new System.Windows.Forms.CheckBox();
-			this.checkBox19 = new System.Windows.Forms.CheckBox();
-			this.checkBox20 = new System.Windows.Forms.CheckBox();
-			this.label37 = new System.Windows.Forms.Label();
-			this.textBox16 = new System.Windows.Forms.TextBox();
-			this.textBox17 = new System.Windows.Forms.TextBox();
-			this.label38 = new System.Windows.Forms.Label();
-			this.checkBox21 = new System.Windows.Forms.CheckBox();
-			this.checkBox22 = new System.Windows.Forms.CheckBox();
-			this.checkBox23 = new System.Windows.Forms.CheckBox();
-			this.checkBox24 = new System.Windows.Forms.CheckBox();
-			this.checkBox25 = new System.Windows.Forms.CheckBox();
-			this.checkBox26 = new System.Windows.Forms.CheckBox();
-			this.label13 = new System.Windows.Forms.Label();
 			this.textBox18 = new System.Windows.Forms.TextBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.ctrl_save = new System.Windows.Forms.Button();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -135,55 +135,55 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.checkBox21);
-			this.tabPage1.Controls.Add(this.checkBox22);
-			this.tabPage1.Controls.Add(this.checkBox23);
-			this.tabPage1.Controls.Add(this.checkBox24);
-			this.tabPage1.Controls.Add(this.checkBox25);
-			this.tabPage1.Controls.Add(this.checkBox26);
+			this.tabPage1.Controls.Add(this.ctrl_behavioral_disorders);
+			this.tabPage1.Controls.Add(this.ctrl_anxiety);
+			this.tabPage1.Controls.Add(this.ctrl_phobia);
+			this.tabPage1.Controls.Add(this.ctrl_personality_disorder);
+			this.tabPage1.Controls.Add(this.ctrl_schizophrenia);
+			this.tabPage1.Controls.Add(this.ctrl_learning_disorders);
 			this.tabPage1.Controls.Add(this.label38);
 			this.tabPage1.Controls.Add(this.textBox17);
-			this.tabPage1.Controls.Add(this.textBox16);
-			this.tabPage1.Controls.Add(this.checkBox17);
-			this.tabPage1.Controls.Add(this.checkBox18);
-			this.tabPage1.Controls.Add(this.checkBox19);
-			this.tabPage1.Controls.Add(this.checkBox20);
+			this.tabPage1.Controls.Add(this.ctrl_food_and_drug_allergies);
+			this.tabPage1.Controls.Add(this.ctrl_genu_varum);
+			this.tabPage1.Controls.Add(this.ctrl_genu_valgum);
+			this.tabPage1.Controls.Add(this.ctrl_flat_foot);
+			this.tabPage1.Controls.Add(this.ctrl_scoliosis);
 			this.tabPage1.Controls.Add(this.label37);
-			this.tabPage1.Controls.Add(this.checkBox13);
-			this.tabPage1.Controls.Add(this.checkBox14);
-			this.tabPage1.Controls.Add(this.checkBox15);
-			this.tabPage1.Controls.Add(this.checkBox16);
+			this.tabPage1.Controls.Add(this.ctrl_goiter);
+			this.tabPage1.Controls.Add(this.ctrl_ocd);
+			this.tabPage1.Controls.Add(this.ctrl_chondromalacia);
+			this.tabPage1.Controls.Add(this.ctrl_anemia);
 			this.tabPage1.Controls.Add(this.label36);
-			this.tabPage1.Controls.Add(this.checkBox12);
-			this.tabPage1.Controls.Add(this.checkBox11);
-			this.tabPage1.Controls.Add(this.checkBox10);
-			this.tabPage1.Controls.Add(this.checkBox9);
-			this.tabPage1.Controls.Add(this.checkBox8);
-			this.tabPage1.Controls.Add(this.checkBox7);
-			this.tabPage1.Controls.Add(this.checkBox6);
-			this.tabPage1.Controls.Add(this.checkBox5);
-			this.tabPage1.Controls.Add(this.checkBox4);
-			this.tabPage1.Controls.Add(this.textBox15);
-			this.tabPage1.Controls.Add(this.checkBox3);
-			this.tabPage1.Controls.Add(this.label34);
+			this.tabPage1.Controls.Add(this.ctrl_adhd);
+			this.tabPage1.Controls.Add(this.ctrl_nail_problem);
+			this.tabPage1.Controls.Add(this.ctrl_pediculosis);
+			this.tabPage1.Controls.Add(this.ctrl_adhd_add);
+			this.tabPage1.Controls.Add(this.ctrl_depression);
+			this.tabPage1.Controls.Add(this.ctrl_hair_problem);
+			this.tabPage1.Controls.Add(this.ctrl_obesity);
+			this.tabPage1.Controls.Add(this.ctrl_dermatitis);
+			this.tabPage1.Controls.Add(this.ctrl_practical_obsession);
+			this.tabPage1.Controls.Add(this.ctrl_ear_desc);
+			this.tabPage1.Controls.Add(this.ctrl_ear);
+			this.tabPage1.Controls.Add(this.ctrl_ear_label);
 			this.tabPage1.Controls.Add(this.label35);
-			this.tabPage1.Controls.Add(this.textBox14);
-			this.tabPage1.Controls.Add(this.checkBox2);
-			this.tabPage1.Controls.Add(this.label32);
+			this.tabPage1.Controls.Add(this.ctrl_elft_eye_desc);
+			this.tabPage1.Controls.Add(this.ctrl_left_eye);
+			this.tabPage1.Controls.Add(this.ctrl_left_eye_label);
 			this.tabPage1.Controls.Add(this.label33);
-			this.tabPage1.Controls.Add(this.textBox13);
-			this.tabPage1.Controls.Add(this.checkBox1);
-			this.tabPage1.Controls.Add(this.label31);
+			this.tabPage1.Controls.Add(this.ctrl_right_eye_desc);
+			this.tabPage1.Controls.Add(this.ctrl_right_eye);
+			this.tabPage1.Controls.Add(this.ctrl_right_eye_label);
 			this.tabPage1.Controls.Add(this.label30);
-			this.tabPage1.Controls.Add(this.textBox12);
-			this.tabPage1.Controls.Add(this.textBox11);
-			this.tabPage1.Controls.Add(this.textBox10);
-			this.tabPage1.Controls.Add(this.textBox9);
-			this.tabPage1.Controls.Add(this.textBox8);
-			this.tabPage1.Controls.Add(this.textBox7);
-			this.tabPage1.Controls.Add(this.textBox6);
-			this.tabPage1.Controls.Add(this.textBox5);
-			this.tabPage1.Controls.Add(this.textBox4);
+			this.tabPage1.Controls.Add(this.ctrl_alt);
+			this.tabPage1.Controls.Add(this.ctrl_ast);
+			this.tabPage1.Controls.Add(this.ctrl_hb);
+			this.tabPage1.Controls.Add(this.ctrl_fbs);
+			this.tabPage1.Controls.Add(this.ctrl_tsh);
+			this.tabPage1.Controls.Add(this.ctrl_tg);
+			this.tabPage1.Controls.Add(this.ctrl_ldl);
+			this.tabPage1.Controls.Add(this.ctrl_hdl);
+			this.tabPage1.Controls.Add(this.ctrl_ldl_sdl_ratio);
 			this.tabPage1.Controls.Add(this.label29);
 			this.tabPage1.Controls.Add(this.label28);
 			this.tabPage1.Controls.Add(this.label27);
@@ -196,10 +196,10 @@
 			this.tabPage1.Controls.Add(this.label12);
 			this.tabPage1.Controls.Add(this.label11);
 			this.tabPage1.Controls.Add(this.label10);
-			this.tabPage1.Controls.Add(this.textBox3);
-			this.tabPage1.Controls.Add(this.textBox2);
+			this.tabPage1.Controls.Add(this.ctrl_blood_group_rh);
+			this.tabPage1.Controls.Add(this.ctrl_national_id);
 			this.tabPage1.Controls.Add(this.label4);
-			this.tabPage1.Controls.Add(this.textBox1);
+			this.tabPage1.Controls.Add(this.ctrl_name);
 			this.tabPage1.Controls.Add(this.label3);
 			this.tabPage1.Controls.Add(this.ctrl_sbp);
 			this.tabPage1.Controls.Add(this.ctrl_dbp);
@@ -224,26 +224,623 @@
 			this.tabPage1.Text = "صفحه اول";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
+			// ctrl_behavioral_disorders
+			// 
+			this.ctrl_behavioral_disorders.AutoSize = true;
+			this.ctrl_behavioral_disorders.Location = new System.Drawing.Point(889, 484);
+			this.ctrl_behavioral_disorders.Name = "ctrl_behavioral_disorders";
+			this.ctrl_behavioral_disorders.Size = new System.Drawing.Size(98, 17);
+			this.ctrl_behavioral_disorders.TabIndex = 53;
+			this.ctrl_behavioral_disorders.Text = "اختلالات رفتاری";
+			this.ctrl_behavioral_disorders.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_anxiety
+			// 
+			this.ctrl_anxiety.AutoSize = true;
+			this.ctrl_anxiety.Location = new System.Drawing.Point(677, 484);
+			this.ctrl_anxiety.Name = "ctrl_anxiety";
+			this.ctrl_anxiety.Size = new System.Drawing.Size(61, 17);
+			this.ctrl_anxiety.TabIndex = 55;
+			this.ctrl_anxiety.Text = "اضطراب";
+			this.ctrl_anxiety.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_phobia
+			// 
+			this.ctrl_phobia.AutoSize = true;
+			this.ctrl_phobia.Location = new System.Drawing.Point(569, 484);
+			this.ctrl_phobia.Name = "ctrl_phobia";
+			this.ctrl_phobia.Size = new System.Drawing.Size(76, 17);
+			this.ctrl_phobia.TabIndex = 56;
+			this.ctrl_phobia.Text = "ترس مرضی";
+			this.ctrl_phobia.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_personality_disorder
+			// 
+			this.ctrl_personality_disorder.AutoSize = true;
+			this.ctrl_personality_disorder.Location = new System.Drawing.Point(418, 484);
+			this.ctrl_personality_disorder.Name = "ctrl_personality_disorder";
+			this.ctrl_personality_disorder.Size = new System.Drawing.Size(100, 17);
+			this.ctrl_personality_disorder.TabIndex = 57;
+			this.ctrl_personality_disorder.Text = "اختلال شخصيتی";
+			this.ctrl_personality_disorder.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_schizophrenia
+			// 
+			this.ctrl_schizophrenia.AutoSize = true;
+			this.ctrl_schizophrenia.Location = new System.Drawing.Point(294, 484);
+			this.ctrl_schizophrenia.Name = "ctrl_schizophrenia";
+			this.ctrl_schizophrenia.Size = new System.Drawing.Size(85, 17);
+			this.ctrl_schizophrenia.TabIndex = 58;
+			this.ctrl_schizophrenia.Text = "اسكيزوفرنی";
+			this.ctrl_schizophrenia.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_learning_disorders
+			// 
+			this.ctrl_learning_disorders.AutoSize = true;
+			this.ctrl_learning_disorders.Location = new System.Drawing.Point(761, 484);
+			this.ctrl_learning_disorders.Name = "ctrl_learning_disorders";
+			this.ctrl_learning_disorders.Size = new System.Drawing.Size(103, 17);
+			this.ctrl_learning_disorders.TabIndex = 54;
+			this.ctrl_learning_disorders.Text = "اختلالات يادگيری";
+			this.ctrl_learning_disorders.UseVisualStyleBackColor = true;
+			// 
+			// label38
+			// 
+			this.label38.AutoSize = true;
+			this.label38.Location = new System.Drawing.Point(617, 437);
+			this.label38.Name = "label38";
+			this.label38.Size = new System.Drawing.Size(373, 13);
+			this.label38.TabIndex = 46;
+			this.label38.Text = "مشکلات روحی - روانی: (بر اساس فرم والدين و معلمان تشخيص احتمالي درج شود)";
+			// 
+			// textBox17
+			// 
+			this.textBox17.Location = new System.Drawing.Point(9, 403);
+			this.textBox17.Name = "textBox17";
+			this.textBox17.Size = new System.Drawing.Size(831, 20);
+			this.textBox17.TabIndex = 45;
+			// 
+			// ctrl_food_and_drug_allergies
+			// 
+			this.ctrl_food_and_drug_allergies.Location = new System.Drawing.Point(8, 91);
+			this.ctrl_food_and_drug_allergies.Name = "ctrl_food_and_drug_allergies";
+			this.ctrl_food_and_drug_allergies.Size = new System.Drawing.Size(832, 20);
+			this.ctrl_food_and_drug_allergies.TabIndex = 3;
+			// 
+			// ctrl_genu_varum
+			// 
+			this.ctrl_genu_varum.AutoSize = true;
+			this.ctrl_genu_varum.Location = new System.Drawing.Point(600, 379);
+			this.ctrl_genu_varum.Name = "ctrl_genu_varum";
+			this.ctrl_genu_varum.Size = new System.Drawing.Size(82, 17);
+			this.ctrl_genu_varum.TabIndex = 42;
+			this.ctrl_genu_varum.Text = "پای پرانتزی";
+			this.ctrl_genu_varum.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_genu_valgum
+			// 
+			this.ctrl_genu_valgum.AutoSize = true;
+			this.ctrl_genu_valgum.Location = new System.Drawing.Point(492, 379);
+			this.ctrl_genu_valgum.Name = "ctrl_genu_valgum";
+			this.ctrl_genu_valgum.Size = new System.Drawing.Size(85, 17);
+			this.ctrl_genu_valgum.TabIndex = 43;
+			this.ctrl_genu_valgum.Text = "پای ضربدری";
+			this.ctrl_genu_valgum.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_flat_foot
+			// 
+			this.ctrl_flat_foot.AutoSize = true;
+			this.ctrl_flat_foot.Location = new System.Drawing.Point(693, 378);
+			this.ctrl_flat_foot.Name = "ctrl_flat_foot";
+			this.ctrl_flat_foot.Size = new System.Drawing.Size(88, 17);
+			this.ctrl_flat_foot.TabIndex = 41;
+			this.ctrl_flat_foot.Text = "کف پای صاف";
+			this.ctrl_flat_foot.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_scoliosis
+			// 
+			this.ctrl_scoliosis.AutoSize = true;
+			this.ctrl_scoliosis.Location = new System.Drawing.Point(791, 379);
+			this.ctrl_scoliosis.Name = "ctrl_scoliosis";
+			this.ctrl_scoliosis.Size = new System.Drawing.Size(69, 17);
+			this.ctrl_scoliosis.TabIndex = 40;
+			this.ctrl_scoliosis.Text = "اسکولیوز";
+			this.ctrl_scoliosis.UseVisualStyleBackColor = true;
+			// 
+			// label37
+			// 
+			this.label37.AutoSize = true;
+			this.label37.Location = new System.Drawing.Point(868, 379);
+			this.label37.Name = "label37";
+			this.label37.Size = new System.Drawing.Size(85, 13);
+			this.label37.TabIndex = 39;
+			this.label37.Text = "معاینات ارتوپدی:";
+			// 
+			// ctrl_goiter
+			// 
+			this.ctrl_goiter.AutoSize = true;
+			this.ctrl_goiter.Location = new System.Drawing.Point(730, 355);
+			this.ctrl_goiter.Name = "ctrl_goiter";
+			this.ctrl_goiter.Size = new System.Drawing.Size(51, 17);
+			this.ctrl_goiter.TabIndex = 38;
+			this.ctrl_goiter.Text = "گواتر";
+			this.ctrl_goiter.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_ocd
+			// 
+			this.ctrl_ocd.AutoSize = true;
+			this.ctrl_ocd.Location = new System.Drawing.Point(897, 461);
+			this.ctrl_ocd.Name = "ctrl_ocd";
+			this.ctrl_ocd.Size = new System.Drawing.Size(90, 17);
+			this.ctrl_ocd.TabIndex = 47;
+			this.ctrl_ocd.Text = "وسواس فکری";
+			this.ctrl_ocd.UseVisualStyleBackColor = true;
+			this.ctrl_ocd.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
+			// 
+			// ctrl_chondromalacia
+			// 
+			this.ctrl_chondromalacia.AutoSize = true;
+			this.ctrl_chondromalacia.Location = new System.Drawing.Point(386, 379);
+			this.ctrl_chondromalacia.Name = "ctrl_chondromalacia";
+			this.ctrl_chondromalacia.Size = new System.Drawing.Size(87, 17);
+			this.ctrl_chondromalacia.TabIndex = 44;
+			this.ctrl_chondromalacia.Text = "کندرومالاسی";
+			this.ctrl_chondromalacia.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_anemia
+			// 
+			this.ctrl_anemia.AutoSize = true;
+			this.ctrl_anemia.Location = new System.Drawing.Point(792, 355);
+			this.ctrl_anemia.Name = "ctrl_anemia";
+			this.ctrl_anemia.Size = new System.Drawing.Size(68, 17);
+			this.ctrl_anemia.TabIndex = 37;
+			this.ctrl_anemia.Text = "کم خونی";
+			this.ctrl_anemia.UseVisualStyleBackColor = true;
+			// 
+			// label36
+			// 
+			this.label36.AutoSize = true;
+			this.label36.Location = new System.Drawing.Point(868, 356);
+			this.label36.Name = "label36";
+			this.label36.Size = new System.Drawing.Size(91, 13);
+			this.label36.TabIndex = 36;
+			this.label36.Text = "معاینه سر و گردن:";
+			// 
+			// ctrl_adhd
+			// 
+			this.ctrl_adhd.AutoSize = true;
+			this.ctrl_adhd.Location = new System.Drawing.Point(681, 461);
+			this.ctrl_adhd.Name = "ctrl_adhd";
+			this.ctrl_adhd.Size = new System.Drawing.Size(57, 17);
+			this.ctrl_adhd.TabIndex = 49;
+			this.ctrl_adhd.Text = "ADHD";
+			this.ctrl_adhd.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_nail_problem
+			// 
+			this.ctrl_nail_problem.AutoSize = true;
+			this.ctrl_nail_problem.Location = new System.Drawing.Point(603, 332);
+			this.ctrl_nail_problem.Name = "ctrl_nail_problem";
+			this.ctrl_nail_problem.Size = new System.Drawing.Size(79, 17);
+			this.ctrl_nail_problem.TabIndex = 34;
+			this.ctrl_nail_problem.Text = "مشکل ناخن";
+			this.ctrl_nail_problem.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_pediculosis
+			// 
+			this.ctrl_pediculosis.AutoSize = true;
+			this.ctrl_pediculosis.Location = new System.Drawing.Point(498, 332);
+			this.ctrl_pediculosis.Name = "ctrl_pediculosis";
+			this.ctrl_pediculosis.Size = new System.Drawing.Size(79, 17);
+			this.ctrl_pediculosis.TabIndex = 35;
+			this.ctrl_pediculosis.Text = "پدیکولوزیس";
+			this.ctrl_pediculosis.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_adhd_add
+			// 
+			this.ctrl_adhd_add.AutoSize = true;
+			this.ctrl_adhd_add.Location = new System.Drawing.Point(543, 461);
+			this.ctrl_adhd_add.Name = "ctrl_adhd_add";
+			this.ctrl_adhd_add.Size = new System.Drawing.Size(102, 17);
+			this.ctrl_adhd_add.TabIndex = 50;
+			this.ctrl_adhd_add.Text = "ADHD فرم ADD";
+			this.ctrl_adhd_add.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_depression
+			// 
+			this.ctrl_depression.AutoSize = true;
+			this.ctrl_depression.Location = new System.Drawing.Point(447, 461);
+			this.ctrl_depression.Name = "ctrl_depression";
+			this.ctrl_depression.Size = new System.Drawing.Size(71, 17);
+			this.ctrl_depression.TabIndex = 51;
+			this.ctrl_depression.Text = "افسردگی";
+			this.ctrl_depression.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_hair_problem
+			// 
+			this.ctrl_hair_problem.AutoSize = true;
+			this.ctrl_hair_problem.Location = new System.Drawing.Point(713, 332);
+			this.ctrl_hair_problem.Name = "ctrl_hair_problem";
+			this.ctrl_hair_problem.Size = new System.Drawing.Size(68, 17);
+			this.ctrl_hair_problem.TabIndex = 33;
+			this.ctrl_hair_problem.Text = "مشکل مو";
+			this.ctrl_hair_problem.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_obesity
+			// 
+			this.ctrl_obesity.AutoSize = true;
+			this.ctrl_obesity.Location = new System.Drawing.Point(273, 461);
+			this.ctrl_obesity.Name = "ctrl_obesity";
+			this.ctrl_obesity.Size = new System.Drawing.Size(106, 17);
+			this.ctrl_obesity.TabIndex = 52;
+			this.ctrl_obesity.Text = "اضافه وزن/چاقی";
+			this.ctrl_obesity.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_dermatitis
+			// 
+			this.ctrl_dermatitis.AutoSize = true;
+			this.ctrl_dermatitis.Location = new System.Drawing.Point(799, 332);
+			this.ctrl_dermatitis.Name = "ctrl_dermatitis";
+			this.ctrl_dermatitis.Size = new System.Drawing.Size(61, 17);
+			this.ctrl_dermatitis.TabIndex = 32;
+			this.ctrl_dermatitis.Text = "درماتیت";
+			this.ctrl_dermatitis.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_practical_obsession
+			// 
+			this.ctrl_practical_obsession.AutoSize = true;
+			this.ctrl_practical_obsession.Location = new System.Drawing.Point(777, 461);
+			this.ctrl_practical_obsession.Name = "ctrl_practical_obsession";
+			this.ctrl_practical_obsession.Size = new System.Drawing.Size(87, 17);
+			this.ctrl_practical_obsession.TabIndex = 48;
+			this.ctrl_practical_obsession.Text = "وسواس عملی";
+			this.ctrl_practical_obsession.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_ear_desc
+			// 
+			this.ctrl_ear_desc.Location = new System.Drawing.Point(9, 301);
+			this.ctrl_ear_desc.Name = "ctrl_ear_desc";
+			this.ctrl_ear_desc.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_ear_desc.TabIndex = 30;
+			// 
+			// ctrl_ear
+			// 
+			this.ctrl_ear.AutoSize = true;
+			this.ctrl_ear.Location = new System.Drawing.Point(847, 303);
+			this.ctrl_ear.Name = "ctrl_ear";
+			this.ctrl_ear.Size = new System.Drawing.Size(48, 17);
+			this.ctrl_ear.TabIndex = 28;
+			this.ctrl_ear.Text = "ندارد";
+			this.ctrl_ear.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_ear_label
+			// 
+			this.ctrl_ear_label.AutoSize = true;
+			this.ctrl_ear_label.Location = new System.Drawing.Point(780, 304);
+			this.ctrl_ear_label.Name = "ctrl_ear_label";
+			this.ctrl_ear_label.Size = new System.Drawing.Size(52, 13);
+			this.ctrl_ear_label.TabIndex = 29;
+			this.ctrl_ear_label.Text = "توضیحات:";
+			// 
+			// label35
+			// 
+			this.label35.AutoSize = true;
+			this.label35.Location = new System.Drawing.Point(902, 304);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size(77, 13);
+			this.label35.TabIndex = 27;
+			this.label35.Text = "مشکل شنوایی:";
+			// 
+			// ctrl_elft_eye_desc
+			// 
+			this.ctrl_elft_eye_desc.Location = new System.Drawing.Point(9, 275);
+			this.ctrl_elft_eye_desc.Name = "ctrl_elft_eye_desc";
+			this.ctrl_elft_eye_desc.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_elft_eye_desc.TabIndex = 26;
+			// 
+			// ctrl_left_eye
+			// 
+			this.ctrl_left_eye.AutoSize = true;
+			this.ctrl_left_eye.Location = new System.Drawing.Point(847, 277);
+			this.ctrl_left_eye.Name = "ctrl_left_eye";
+			this.ctrl_left_eye.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_left_eye.TabIndex = 24;
+			this.ctrl_left_eye.Text = "سالم";
+			this.ctrl_left_eye.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_left_eye_label
+			// 
+			this.ctrl_left_eye_label.AutoSize = true;
+			this.ctrl_left_eye_label.Location = new System.Drawing.Point(780, 278);
+			this.ctrl_left_eye_label.Name = "ctrl_left_eye_label";
+			this.ctrl_left_eye_label.Size = new System.Drawing.Size(57, 13);
+			this.ctrl_left_eye_label.TabIndex = 25;
+			this.ctrl_left_eye_label.Text = "علت ارجاع:";
+			// 
+			// label33
+			// 
+			this.label33.AutoSize = true;
+			this.label33.Location = new System.Drawing.Point(902, 278);
+			this.label33.Name = "label33";
+			this.label33.Size = new System.Drawing.Size(82, 13);
+			this.label33.TabIndex = 23;
+			this.label33.Text = "بینایی چشم چپ:";
+			// 
+			// ctrl_right_eye_desc
+			// 
+			this.ctrl_right_eye_desc.Location = new System.Drawing.Point(9, 249);
+			this.ctrl_right_eye_desc.Name = "ctrl_right_eye_desc";
+			this.ctrl_right_eye_desc.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_right_eye_desc.TabIndex = 22;
+			// 
+			// ctrl_right_eye
+			// 
+			this.ctrl_right_eye.AutoSize = true;
+			this.ctrl_right_eye.Location = new System.Drawing.Point(847, 251);
+			this.ctrl_right_eye.Name = "ctrl_right_eye";
+			this.ctrl_right_eye.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_right_eye.TabIndex = 20;
+			this.ctrl_right_eye.Text = "سالم";
+			this.ctrl_right_eye.UseVisualStyleBackColor = true;
+			// 
+			// ctrl_right_eye_label
+			// 
+			this.ctrl_right_eye_label.AutoSize = true;
+			this.ctrl_right_eye_label.Location = new System.Drawing.Point(780, 252);
+			this.ctrl_right_eye_label.Name = "ctrl_right_eye_label";
+			this.ctrl_right_eye_label.Size = new System.Drawing.Size(57, 13);
+			this.ctrl_right_eye_label.TabIndex = 21;
+			this.ctrl_right_eye_label.Text = "علت ارجاع:";
+			// 
+			// label30
+			// 
+			this.label30.AutoSize = true;
+			this.label30.Location = new System.Drawing.Point(866, 333);
+			this.label30.Name = "label30";
+			this.label30.Size = new System.Drawing.Size(126, 13);
+			this.label30.TabIndex = 31;
+			this.label30.Text = "وضعیت پوست، مو و ناخن:";
+			// 
+			// ctrl_alt
+			// 
+			this.ctrl_alt.Location = new System.Drawing.Point(572, 212);
+			this.ctrl_alt.Name = "ctrl_alt";
+			this.ctrl_alt.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_alt.TabIndex = 18;
+			// 
+			// ctrl_ast
+			// 
+			this.ctrl_ast.Location = new System.Drawing.Point(790, 212);
+			this.ctrl_ast.Name = "ctrl_ast";
+			this.ctrl_ast.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_ast.TabIndex = 17;
+			// 
+			// ctrl_hb
+			// 
+			this.ctrl_hb.Location = new System.Drawing.Point(235, 151);
+			this.ctrl_hb.Name = "ctrl_hb";
+			this.ctrl_hb.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_hb.TabIndex = 10;
+			// 
+			// ctrl_fbs
+			// 
+			this.ctrl_fbs.Location = new System.Drawing.Point(87, 151);
+			this.ctrl_fbs.Name = "ctrl_fbs";
+			this.ctrl_fbs.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_fbs.TabIndex = 11;
+			// 
+			// ctrl_tsh
+			// 
+			this.ctrl_tsh.Location = new System.Drawing.Point(856, 180);
+			this.ctrl_tsh.Name = "ctrl_tsh";
+			this.ctrl_tsh.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_tsh.TabIndex = 12;
+			this.ctrl_tsh.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+			// 
+			// ctrl_tg
+			// 
+			this.ctrl_tg.Location = new System.Drawing.Point(706, 180);
+			this.ctrl_tg.Name = "ctrl_tg";
+			this.ctrl_tg.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_tg.TabIndex = 13;
+			this.ctrl_tg.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+			// 
+			// ctrl_ldl
+			// 
+			this.ctrl_ldl.Location = new System.Drawing.Point(552, 180);
+			this.ctrl_ldl.Name = "ctrl_ldl";
+			this.ctrl_ldl.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_ldl.TabIndex = 14;
+			this.ctrl_ldl.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+			// 
+			// ctrl_hdl
+			// 
+			this.ctrl_hdl.Location = new System.Drawing.Point(395, 180);
+			this.ctrl_hdl.Name = "ctrl_hdl";
+			this.ctrl_hdl.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_hdl.TabIndex = 15;
+			this.ctrl_hdl.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+			// 
+			// ctrl_ldl_sdl_ratio
+			// 
+			this.ctrl_ldl_sdl_ratio.Location = new System.Drawing.Point(184, 180);
+			this.ctrl_ldl_sdl_ratio.Name = "ctrl_ldl_sdl_ratio";
+			this.ctrl_ldl_sdl_ratio.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_ldl_sdl_ratio.TabIndex = 16;
+			this.ctrl_ldl_sdl_ratio.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Location = new System.Drawing.Point(193, 154);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(27, 13);
+			this.label29.TabIndex = 40;
+			this.label29.Text = "FBS";
+			// 
+			// label28
+			// 
+			this.label28.AutoSize = true;
+			this.label28.Location = new System.Drawing.Point(962, 183);
+			this.label28.Name = "label28";
+			this.label28.Size = new System.Drawing.Size(29, 13);
+			this.label28.TabIndex = 39;
+			this.label28.Text = "TSH";
+			this.label28.Click += new System.EventHandler(this.label28_Click);
+			// 
+			// label27
+			// 
+			this.label27.AutoSize = true;
+			this.label27.Location = new System.Drawing.Point(812, 183);
+			this.label27.Name = "label27";
+			this.label27.Size = new System.Drawing.Size(22, 13);
+			this.label27.TabIndex = 38;
+			this.label27.Text = "TG";
+			this.label27.Click += new System.EventHandler(this.label27_Click);
+			// 
+			// label26
+			// 
+			this.label26.AutoSize = true;
+			this.label26.Location = new System.Drawing.Point(658, 183);
+			this.label26.Name = "label26";
+			this.label26.Size = new System.Drawing.Size(27, 13);
+			this.label26.TabIndex = 37;
+			this.label26.Text = "LDL";
+			this.label26.Click += new System.EventHandler(this.label26_Click);
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Location = new System.Drawing.Point(501, 183);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(29, 13);
+			this.label25.TabIndex = 36;
+			this.label25.Text = "HDL";
+			this.label25.Click += new System.EventHandler(this.label25_Click);
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Location = new System.Drawing.Point(896, 215);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(95, 13);
+			this.label24.TabIndex = 35;
+			this.label24.Text = "AST (بر حسب U/L)";
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Location = new System.Drawing.Point(678, 215);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(94, 13);
+			this.label23.TabIndex = 34;
+			this.label23.Text = "ALT (بر حسب U/L)";
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Location = new System.Drawing.Point(902, 252);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(92, 13);
+			this.label22.TabIndex = 19;
+			this.label22.Text = "بینایی چشم راست:";
+			// 
+			// label20
+			// 
+			this.label20.AutoSize = true;
+			this.label20.Location = new System.Drawing.Point(847, 406);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(59, 13);
+			this.label20.TabIndex = 31;
+			this.label20.Text = "سایر موارد:";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Location = new System.Drawing.Point(290, 183);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(81, 13);
+			this.label12.TabIndex = 23;
+			this.label12.Text = "LDL/SDL Ratio";
+			this.label12.Click += new System.EventHandler(this.label12_Click);
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(341, 154);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(21, 13);
+			this.label11.TabIndex = 22;
+			this.label11.Text = "Hb";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(492, 154);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(61, 13);
+			this.label10.TabIndex = 21;
+			this.label10.Text = "گروه خونی";
+			// 
+			// ctrl_blood_group_rh
+			// 
+			this.ctrl_blood_group_rh.Location = new System.Drawing.Point(386, 151);
+			this.ctrl_blood_group_rh.Name = "ctrl_blood_group_rh";
+			this.ctrl_blood_group_rh.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_blood_group_rh.TabIndex = 9;
+			// 
+			// ctrl_national_id
+			// 
+			this.ctrl_national_id.Location = new System.Drawing.Point(804, 32);
+			this.ctrl_national_id.Name = "ctrl_national_id";
+			this.ctrl_national_id.Size = new System.Drawing.Size(138, 20);
+			this.ctrl_national_id.TabIndex = 1;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(948, 35);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(43, 13);
+			this.label4.TabIndex = 18;
+			this.label4.Text = "کد ملی:";
+			// 
+			// ctrl_name
+			// 
+			this.ctrl_name.Location = new System.Drawing.Point(804, 6);
+			this.ctrl_name.Name = "ctrl_name";
+			this.ctrl_name.Size = new System.Drawing.Size(160, 20);
+			this.ctrl_name.TabIndex = 0;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(968, 9);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(23, 13);
+			this.label3.TabIndex = 16;
+			this.label3.Text = "نام:";
+			// 
 			// ctrl_sbp
 			// 
 			this.ctrl_sbp.Location = new System.Drawing.Point(713, 151);
 			this.ctrl_sbp.Name = "ctrl_sbp";
 			this.ctrl_sbp.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_sbp.TabIndex = 15;
+			this.ctrl_sbp.TabIndex = 7;
 			// 
 			// ctrl_dbp
 			// 
 			this.ctrl_dbp.Location = new System.Drawing.Point(573, 151);
 			this.ctrl_dbp.Name = "ctrl_dbp";
 			this.ctrl_dbp.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_dbp.TabIndex = 14;
+			this.ctrl_dbp.TabIndex = 8;
 			// 
 			// ctrl_bmi
 			// 
 			this.ctrl_bmi.Location = new System.Drawing.Point(418, 119);
 			this.ctrl_bmi.Name = "ctrl_bmi";
 			this.ctrl_bmi.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_bmi.TabIndex = 13;
+			this.ctrl_bmi.TabIndex = 6;
 			// 
 			// label9
 			// 
@@ -260,7 +857,7 @@
 			this.ctrl_weight.Location = new System.Drawing.Point(638, 119);
 			this.ctrl_weight.Name = "ctrl_weight";
 			this.ctrl_weight.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_weight.TabIndex = 11;
+			this.ctrl_weight.TabIndex = 5;
 			this.ctrl_weight.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
 			this.ctrl_weight.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_weight_Validating);
 			// 
@@ -278,7 +875,7 @@
 			this.ctrl_height.Location = new System.Drawing.Point(864, 119);
 			this.ctrl_height.Name = "ctrl_height";
 			this.ctrl_height.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_height.TabIndex = 9;
+			this.ctrl_height.TabIndex = 4;
 			this.ctrl_height.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			this.ctrl_height.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_height_Validating);
 			// 
@@ -357,7 +954,7 @@
 			this.ctrl_grade.Location = new System.Drawing.Point(804, 55);
 			this.ctrl_grade.Name = "ctrl_grade";
 			this.ctrl_grade.Size = new System.Drawing.Size(121, 21);
-			this.ctrl_grade.TabIndex = 1;
+			this.ctrl_grade.TabIndex = 2;
 			// 
 			// label1
 			// 
@@ -380,612 +977,13 @@
 			this.tabPage2.Text = "صفحه دوم";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// ctrl_save
-			// 
-			this.ctrl_save.Location = new System.Drawing.Point(12, 578);
-			this.ctrl_save.Name = "ctrl_save";
-			this.ctrl_save.Size = new System.Drawing.Size(75, 23);
-			this.ctrl_save.TabIndex = 1;
-			this.ctrl_save.Text = "ذخیره";
-			this.ctrl_save.UseVisualStyleBackColor = true;
-			this.ctrl_save.Click += new System.EventHandler(this.save_Click);
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(804, 6);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(160, 20);
-			this.textBox1.TabIndex = 17;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(968, 9);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(23, 13);
-			this.label3.TabIndex = 16;
-			this.label3.Text = "نام:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(948, 35);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(43, 13);
-			this.label4.TabIndex = 18;
-			this.label4.Text = "کد ملی:";
-			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(804, 32);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(138, 20);
-			this.textBox2.TabIndex = 19;
-			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(386, 151);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 20);
-			this.textBox3.TabIndex = 20;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(492, 154);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(61, 13);
-			this.label10.TabIndex = 21;
-			this.label10.Text = "گروه خونی";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(341, 154);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(21, 13);
-			this.label11.TabIndex = 22;
-			this.label11.Text = "Hb";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(290, 183);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(81, 13);
-			this.label12.TabIndex = 23;
-			this.label12.Text = "LDL/SDL Ratio";
-			this.label12.Click += new System.EventHandler(this.label12_Click);
-			// 
-			// label20
-			// 
-			this.label20.AutoSize = true;
-			this.label20.Location = new System.Drawing.Point(847, 406);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(59, 13);
-			this.label20.TabIndex = 31;
-			this.label20.Text = "سایر موارد:";
-			// 
-			// label22
-			// 
-			this.label22.AutoSize = true;
-			this.label22.Location = new System.Drawing.Point(902, 252);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(92, 13);
-			this.label22.TabIndex = 33;
-			this.label22.Text = "بینایی چشم راست:";
-			// 
-			// label23
-			// 
-			this.label23.AutoSize = true;
-			this.label23.Location = new System.Drawing.Point(678, 215);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(94, 13);
-			this.label23.TabIndex = 34;
-			this.label23.Text = "ALT (بر حسب U/L)";
-			// 
-			// label24
-			// 
-			this.label24.AutoSize = true;
-			this.label24.Location = new System.Drawing.Point(896, 215);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(95, 13);
-			this.label24.TabIndex = 35;
-			this.label24.Text = "AST (بر حسب U/L)";
-			// 
-			// label25
-			// 
-			this.label25.AutoSize = true;
-			this.label25.Location = new System.Drawing.Point(501, 183);
-			this.label25.Name = "label25";
-			this.label25.Size = new System.Drawing.Size(29, 13);
-			this.label25.TabIndex = 36;
-			this.label25.Text = "HDL";
-			this.label25.Click += new System.EventHandler(this.label25_Click);
-			// 
-			// label26
-			// 
-			this.label26.AutoSize = true;
-			this.label26.Location = new System.Drawing.Point(658, 183);
-			this.label26.Name = "label26";
-			this.label26.Size = new System.Drawing.Size(27, 13);
-			this.label26.TabIndex = 37;
-			this.label26.Text = "LDL";
-			this.label26.Click += new System.EventHandler(this.label26_Click);
-			// 
-			// label27
-			// 
-			this.label27.AutoSize = true;
-			this.label27.Location = new System.Drawing.Point(812, 183);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(22, 13);
-			this.label27.TabIndex = 38;
-			this.label27.Text = "TG";
-			this.label27.Click += new System.EventHandler(this.label27_Click);
-			// 
-			// label28
-			// 
-			this.label28.AutoSize = true;
-			this.label28.Location = new System.Drawing.Point(962, 183);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(29, 13);
-			this.label28.TabIndex = 39;
-			this.label28.Text = "TSH";
-			this.label28.Click += new System.EventHandler(this.label28_Click);
-			// 
-			// label29
-			// 
-			this.label29.AutoSize = true;
-			this.label29.Location = new System.Drawing.Point(193, 154);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(27, 13);
-			this.label29.TabIndex = 40;
-			this.label29.Text = "FBS";
-			// 
-			// textBox4
-			// 
-			this.textBox4.Location = new System.Drawing.Point(184, 180);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 41;
-			this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-			// 
-			// textBox5
-			// 
-			this.textBox5.Location = new System.Drawing.Point(395, 180);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 42;
-			this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-			// 
-			// textBox6
-			// 
-			this.textBox6.Location = new System.Drawing.Point(552, 180);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(100, 20);
-			this.textBox6.TabIndex = 43;
-			this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-			// 
-			// textBox7
-			// 
-			this.textBox7.Location = new System.Drawing.Point(706, 180);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(100, 20);
-			this.textBox7.TabIndex = 44;
-			this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-			// 
-			// textBox8
-			// 
-			this.textBox8.Location = new System.Drawing.Point(856, 180);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(100, 20);
-			this.textBox8.TabIndex = 45;
-			this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-			// 
-			// textBox9
-			// 
-			this.textBox9.Location = new System.Drawing.Point(87, 151);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(100, 20);
-			this.textBox9.TabIndex = 46;
-			// 
-			// textBox10
-			// 
-			this.textBox10.Location = new System.Drawing.Point(235, 151);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(100, 20);
-			this.textBox10.TabIndex = 47;
-			// 
-			// textBox11
-			// 
-			this.textBox11.Location = new System.Drawing.Point(790, 212);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(100, 20);
-			this.textBox11.TabIndex = 48;
-			// 
-			// textBox12
-			// 
-			this.textBox12.Location = new System.Drawing.Point(572, 212);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(100, 20);
-			this.textBox12.TabIndex = 49;
-			// 
-			// label30
-			// 
-			this.label30.AutoSize = true;
-			this.label30.Location = new System.Drawing.Point(866, 333);
-			this.label30.Name = "label30";
-			this.label30.Size = new System.Drawing.Size(126, 13);
-			this.label30.TabIndex = 50;
-			this.label30.Text = "وضعیت پوست، مو و ناخن:";
-			// 
-			// label31
-			// 
-			this.label31.AutoSize = true;
-			this.label31.Location = new System.Drawing.Point(780, 252);
-			this.label31.Name = "label31";
-			this.label31.Size = new System.Drawing.Size(57, 13);
-			this.label31.TabIndex = 51;
-			this.label31.Text = "علت ارجاع:";
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(847, 251);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(47, 17);
-			this.checkBox1.TabIndex = 52;
-			this.checkBox1.Text = "سالم";
-			this.checkBox1.UseVisualStyleBackColor = true;
-			// 
-			// textBox13
-			// 
-			this.textBox13.Location = new System.Drawing.Point(9, 249);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(770, 20);
-			this.textBox13.TabIndex = 53;
-			// 
-			// textBox14
-			// 
-			this.textBox14.Location = new System.Drawing.Point(9, 275);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.Size = new System.Drawing.Size(770, 20);
-			this.textBox14.TabIndex = 57;
-			// 
-			// checkBox2
-			// 
-			this.checkBox2.AutoSize = true;
-			this.checkBox2.Location = new System.Drawing.Point(847, 277);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(47, 17);
-			this.checkBox2.TabIndex = 56;
-			this.checkBox2.Text = "سالم";
-			this.checkBox2.UseVisualStyleBackColor = true;
-			// 
-			// label32
-			// 
-			this.label32.AutoSize = true;
-			this.label32.Location = new System.Drawing.Point(780, 278);
-			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(57, 13);
-			this.label32.TabIndex = 55;
-			this.label32.Text = "علت ارجاع:";
-			// 
-			// label33
-			// 
-			this.label33.AutoSize = true;
-			this.label33.Location = new System.Drawing.Point(902, 278);
-			this.label33.Name = "label33";
-			this.label33.Size = new System.Drawing.Size(82, 13);
-			this.label33.TabIndex = 54;
-			this.label33.Text = "بینایی چشم چپ:";
-			// 
-			// textBox15
-			// 
-			this.textBox15.Location = new System.Drawing.Point(9, 301);
-			this.textBox15.Name = "textBox15";
-			this.textBox15.Size = new System.Drawing.Size(770, 20);
-			this.textBox15.TabIndex = 61;
-			// 
-			// checkBox3
-			// 
-			this.checkBox3.AutoSize = true;
-			this.checkBox3.Location = new System.Drawing.Point(847, 303);
-			this.checkBox3.Name = "checkBox3";
-			this.checkBox3.Size = new System.Drawing.Size(48, 17);
-			this.checkBox3.TabIndex = 60;
-			this.checkBox3.Text = "ندارد";
-			this.checkBox3.UseVisualStyleBackColor = true;
-			// 
-			// label34
-			// 
-			this.label34.AutoSize = true;
-			this.label34.Location = new System.Drawing.Point(780, 304);
-			this.label34.Name = "label34";
-			this.label34.Size = new System.Drawing.Size(52, 13);
-			this.label34.TabIndex = 59;
-			this.label34.Text = "توضیحات:";
-			// 
-			// label35
-			// 
-			this.label35.AutoSize = true;
-			this.label35.Location = new System.Drawing.Point(902, 304);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(77, 13);
-			this.label35.TabIndex = 58;
-			this.label35.Text = "مشکل شنوایی:";
-			// 
-			// checkBox4
-			// 
-			this.checkBox4.AutoSize = true;
-			this.checkBox4.Location = new System.Drawing.Point(777, 461);
-			this.checkBox4.Name = "checkBox4";
-			this.checkBox4.Size = new System.Drawing.Size(87, 17);
-			this.checkBox4.TabIndex = 62;
-			this.checkBox4.Text = "وسواس عملی";
-			this.checkBox4.UseVisualStyleBackColor = true;
-			// 
-			// checkBox5
-			// 
-			this.checkBox5.AutoSize = true;
-			this.checkBox5.Location = new System.Drawing.Point(799, 332);
-			this.checkBox5.Name = "checkBox5";
-			this.checkBox5.Size = new System.Drawing.Size(61, 17);
-			this.checkBox5.TabIndex = 63;
-			this.checkBox5.Text = "درماتیت";
-			this.checkBox5.UseVisualStyleBackColor = true;
-			// 
-			// checkBox6
-			// 
-			this.checkBox6.AutoSize = true;
-			this.checkBox6.Location = new System.Drawing.Point(273, 461);
-			this.checkBox6.Name = "checkBox6";
-			this.checkBox6.Size = new System.Drawing.Size(106, 17);
-			this.checkBox6.TabIndex = 64;
-			this.checkBox6.Text = "اضافه وزن/چاقی";
-			this.checkBox6.UseVisualStyleBackColor = true;
-			// 
-			// checkBox7
-			// 
-			this.checkBox7.AutoSize = true;
-			this.checkBox7.Location = new System.Drawing.Point(713, 332);
-			this.checkBox7.Name = "checkBox7";
-			this.checkBox7.Size = new System.Drawing.Size(68, 17);
-			this.checkBox7.TabIndex = 65;
-			this.checkBox7.Text = "مشکل مو";
-			this.checkBox7.UseVisualStyleBackColor = true;
-			// 
-			// checkBox8
-			// 
-			this.checkBox8.AutoSize = true;
-			this.checkBox8.Location = new System.Drawing.Point(447, 461);
-			this.checkBox8.Name = "checkBox8";
-			this.checkBox8.Size = new System.Drawing.Size(71, 17);
-			this.checkBox8.TabIndex = 66;
-			this.checkBox8.Text = "افسردگی";
-			this.checkBox8.UseVisualStyleBackColor = true;
-			// 
-			// checkBox9
-			// 
-			this.checkBox9.AutoSize = true;
-			this.checkBox9.Location = new System.Drawing.Point(543, 461);
-			this.checkBox9.Name = "checkBox9";
-			this.checkBox9.Size = new System.Drawing.Size(102, 17);
-			this.checkBox9.TabIndex = 67;
-			this.checkBox9.Text = "ADHD فرم ADD";
-			this.checkBox9.UseVisualStyleBackColor = true;
-			// 
-			// checkBox10
-			// 
-			this.checkBox10.AutoSize = true;
-			this.checkBox10.Location = new System.Drawing.Point(498, 332);
-			this.checkBox10.Name = "checkBox10";
-			this.checkBox10.Size = new System.Drawing.Size(79, 17);
-			this.checkBox10.TabIndex = 68;
-			this.checkBox10.Text = "پدیکولوزیس";
-			this.checkBox10.UseVisualStyleBackColor = true;
-			// 
-			// checkBox11
-			// 
-			this.checkBox11.AutoSize = true;
-			this.checkBox11.Location = new System.Drawing.Point(603, 332);
-			this.checkBox11.Name = "checkBox11";
-			this.checkBox11.Size = new System.Drawing.Size(79, 17);
-			this.checkBox11.TabIndex = 69;
-			this.checkBox11.Text = "مشکل ناخن";
-			this.checkBox11.UseVisualStyleBackColor = true;
-			// 
-			// checkBox12
-			// 
-			this.checkBox12.AutoSize = true;
-			this.checkBox12.Location = new System.Drawing.Point(681, 461);
-			this.checkBox12.Name = "checkBox12";
-			this.checkBox12.Size = new System.Drawing.Size(57, 17);
-			this.checkBox12.TabIndex = 70;
-			this.checkBox12.Text = "ADHD";
-			this.checkBox12.UseVisualStyleBackColor = true;
-			// 
-			// checkBox13
-			// 
-			this.checkBox13.AutoSize = true;
-			this.checkBox13.Location = new System.Drawing.Point(730, 355);
-			this.checkBox13.Name = "checkBox13";
-			this.checkBox13.Size = new System.Drawing.Size(51, 17);
-			this.checkBox13.TabIndex = 75;
-			this.checkBox13.Text = "گواتر";
-			this.checkBox13.UseVisualStyleBackColor = true;
-			// 
-			// checkBox14
-			// 
-			this.checkBox14.AutoSize = true;
-			this.checkBox14.Location = new System.Drawing.Point(897, 461);
-			this.checkBox14.Name = "checkBox14";
-			this.checkBox14.Size = new System.Drawing.Size(90, 17);
-			this.checkBox14.TabIndex = 74;
-			this.checkBox14.Text = "وسواس فکری";
-			this.checkBox14.UseVisualStyleBackColor = true;
-			this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
-			// 
-			// checkBox15
-			// 
-			this.checkBox15.AutoSize = true;
-			this.checkBox15.Location = new System.Drawing.Point(386, 379);
-			this.checkBox15.Name = "checkBox15";
-			this.checkBox15.Size = new System.Drawing.Size(87, 17);
-			this.checkBox15.TabIndex = 73;
-			this.checkBox15.Text = "کندرومالاسی";
-			this.checkBox15.UseVisualStyleBackColor = true;
-			// 
-			// checkBox16
-			// 
-			this.checkBox16.AutoSize = true;
-			this.checkBox16.Location = new System.Drawing.Point(792, 355);
-			this.checkBox16.Name = "checkBox16";
-			this.checkBox16.Size = new System.Drawing.Size(68, 17);
-			this.checkBox16.TabIndex = 72;
-			this.checkBox16.Text = "کم خونی";
-			this.checkBox16.UseVisualStyleBackColor = true;
-			// 
-			// label36
-			// 
-			this.label36.AutoSize = true;
-			this.label36.Location = new System.Drawing.Point(868, 356);
-			this.label36.Name = "label36";
-			this.label36.Size = new System.Drawing.Size(91, 13);
-			this.label36.TabIndex = 71;
-			this.label36.Text = "معاینه سر و گردن:";
-			// 
-			// checkBox17
-			// 
-			this.checkBox17.AutoSize = true;
-			this.checkBox17.Location = new System.Drawing.Point(600, 379);
-			this.checkBox17.Name = "checkBox17";
-			this.checkBox17.Size = new System.Drawing.Size(82, 17);
-			this.checkBox17.TabIndex = 80;
-			this.checkBox17.Text = "پای پرانتزی";
-			this.checkBox17.UseVisualStyleBackColor = true;
-			// 
-			// checkBox18
-			// 
-			this.checkBox18.AutoSize = true;
-			this.checkBox18.Location = new System.Drawing.Point(492, 379);
-			this.checkBox18.Name = "checkBox18";
-			this.checkBox18.Size = new System.Drawing.Size(85, 17);
-			this.checkBox18.TabIndex = 79;
-			this.checkBox18.Text = "پای ضربدری";
-			this.checkBox18.UseVisualStyleBackColor = true;
-			// 
-			// checkBox19
-			// 
-			this.checkBox19.AutoSize = true;
-			this.checkBox19.Location = new System.Drawing.Point(693, 378);
-			this.checkBox19.Name = "checkBox19";
-			this.checkBox19.Size = new System.Drawing.Size(88, 17);
-			this.checkBox19.TabIndex = 78;
-			this.checkBox19.Text = "کف پای صاف";
-			this.checkBox19.UseVisualStyleBackColor = true;
-			// 
-			// checkBox20
-			// 
-			this.checkBox20.AutoSize = true;
-			this.checkBox20.Location = new System.Drawing.Point(791, 379);
-			this.checkBox20.Name = "checkBox20";
-			this.checkBox20.Size = new System.Drawing.Size(69, 17);
-			this.checkBox20.TabIndex = 77;
-			this.checkBox20.Text = "اسکولیوز";
-			this.checkBox20.UseVisualStyleBackColor = true;
-			// 
-			// label37
-			// 
-			this.label37.AutoSize = true;
-			this.label37.Location = new System.Drawing.Point(868, 379);
-			this.label37.Name = "label37";
-			this.label37.Size = new System.Drawing.Size(85, 13);
-			this.label37.TabIndex = 76;
-			this.label37.Text = "معاینات ارتوپدی:";
-			// 
-			// textBox16
-			// 
-			this.textBox16.Location = new System.Drawing.Point(8, 91);
-			this.textBox16.Name = "textBox16";
-			this.textBox16.Size = new System.Drawing.Size(832, 20);
-			this.textBox16.TabIndex = 81;
-			// 
-			// textBox17
-			// 
-			this.textBox17.Location = new System.Drawing.Point(9, 403);
-			this.textBox17.Name = "textBox17";
-			this.textBox17.Size = new System.Drawing.Size(831, 20);
-			this.textBox17.TabIndex = 82;
-			// 
-			// label38
-			// 
-			this.label38.AutoSize = true;
-			this.label38.Location = new System.Drawing.Point(617, 437);
-			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(373, 13);
-			this.label38.TabIndex = 83;
-			this.label38.Text = "مشکلات روحی - روانی: (بر اساس فرم والدين و معلمان تشخيص احتمالي درج شود)";
-			// 
-			// checkBox21
-			// 
-			this.checkBox21.AutoSize = true;
-			this.checkBox21.Location = new System.Drawing.Point(889, 484);
-			this.checkBox21.Name = "checkBox21";
-			this.checkBox21.Size = new System.Drawing.Size(98, 17);
-			this.checkBox21.TabIndex = 89;
-			this.checkBox21.Text = "اختلالات رفتاری";
-			this.checkBox21.UseVisualStyleBackColor = true;
-			// 
-			// checkBox22
-			// 
-			this.checkBox22.AutoSize = true;
-			this.checkBox22.Location = new System.Drawing.Point(677, 484);
-			this.checkBox22.Name = "checkBox22";
-			this.checkBox22.Size = new System.Drawing.Size(61, 17);
-			this.checkBox22.TabIndex = 88;
-			this.checkBox22.Text = "اضطراب";
-			this.checkBox22.UseVisualStyleBackColor = true;
-			// 
-			// checkBox23
-			// 
-			this.checkBox23.AutoSize = true;
-			this.checkBox23.Location = new System.Drawing.Point(569, 484);
-			this.checkBox23.Name = "checkBox23";
-			this.checkBox23.Size = new System.Drawing.Size(76, 17);
-			this.checkBox23.TabIndex = 87;
-			this.checkBox23.Text = "ترس مرضی";
-			this.checkBox23.UseVisualStyleBackColor = true;
-			// 
-			// checkBox24
-			// 
-			this.checkBox24.AutoSize = true;
-			this.checkBox24.Location = new System.Drawing.Point(418, 484);
-			this.checkBox24.Name = "checkBox24";
-			this.checkBox24.Size = new System.Drawing.Size(100, 17);
-			this.checkBox24.TabIndex = 86;
-			this.checkBox24.Text = "اختلال شخصيتی";
-			this.checkBox24.UseVisualStyleBackColor = true;
-			// 
-			// checkBox25
-			// 
-			this.checkBox25.AutoSize = true;
-			this.checkBox25.Location = new System.Drawing.Point(294, 484);
-			this.checkBox25.Name = "checkBox25";
-			this.checkBox25.Size = new System.Drawing.Size(85, 17);
-			this.checkBox25.TabIndex = 85;
-			this.checkBox25.Text = "اسكيزوفرنی";
-			this.checkBox25.UseVisualStyleBackColor = true;
-			// 
-			// checkBox26
-			// 
-			this.checkBox26.AutoSize = true;
-			this.checkBox26.Location = new System.Drawing.Point(761, 484);
-			this.checkBox26.Name = "checkBox26";
-			this.checkBox26.Size = new System.Drawing.Size(103, 17);
-			this.checkBox26.TabIndex = 84;
-			this.checkBox26.Text = "اختلالات يادگيری";
-			this.checkBox26.UseVisualStyleBackColor = true;
+			// textBox18
+			// 
+			this.textBox18.Location = new System.Drawing.Point(8, 28);
+			this.textBox18.Multiline = true;
+			this.textBox18.Name = "textBox18";
+			this.textBox18.Size = new System.Drawing.Size(983, 274);
+			this.textBox18.TabIndex = 1;
 			// 
 			// label13
 			// 
@@ -996,13 +994,15 @@
 			this.label13.TabIndex = 0;
 			this.label13.Text = "ملاحظات ویژه:";
 			// 
-			// textBox18
+			// ctrl_save
 			// 
-			this.textBox18.Location = new System.Drawing.Point(8, 28);
-			this.textBox18.Multiline = true;
-			this.textBox18.Name = "textBox18";
-			this.textBox18.Size = new System.Drawing.Size(983, 274);
-			this.textBox18.TabIndex = 1;
+			this.ctrl_save.Location = new System.Drawing.Point(12, 578);
+			this.ctrl_save.Name = "ctrl_save";
+			this.ctrl_save.Size = new System.Drawing.Size(75, 23);
+			this.ctrl_save.TabIndex = 0;
+			this.ctrl_save.Text = "ذخیره";
+			this.ctrl_save.UseVisualStyleBackColor = true;
+			this.ctrl_save.Click += new System.EventHandler(this.save_Click);
 			// 
 			// StudentsForm2
 			// 
@@ -1049,19 +1049,19 @@
 		private System.Windows.Forms.Label ctrl_height_label;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button ctrl_save;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox ctrl_national_id;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox ctrl_name;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox ctrl_alt;
+		private System.Windows.Forms.TextBox ctrl_ast;
+		private System.Windows.Forms.TextBox ctrl_hb;
+		private System.Windows.Forms.TextBox ctrl_fbs;
+		private System.Windows.Forms.TextBox ctrl_tsh;
+		private System.Windows.Forms.TextBox ctrl_tg;
+		private System.Windows.Forms.TextBox ctrl_ldl;
+		private System.Windows.Forms.TextBox ctrl_hdl;
+		private System.Windows.Forms.TextBox ctrl_ldl_sdl_ratio;
 		private System.Windows.Forms.Label label29;
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Label label27;
@@ -1074,47 +1074,47 @@
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox15;
-		private System.Windows.Forms.CheckBox checkBox3;
-		private System.Windows.Forms.Label label34;
+		private System.Windows.Forms.TextBox ctrl_blood_group_rh;
+		private System.Windows.Forms.TextBox ctrl_ear_desc;
+		private System.Windows.Forms.CheckBox ctrl_ear;
+		private System.Windows.Forms.Label ctrl_ear_label;
 		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.TextBox textBox14;
-		private System.Windows.Forms.CheckBox checkBox2;
-		private System.Windows.Forms.Label label32;
+		private System.Windows.Forms.TextBox ctrl_elft_eye_desc;
+		private System.Windows.Forms.CheckBox ctrl_left_eye;
+		private System.Windows.Forms.Label ctrl_left_eye_label;
 		private System.Windows.Forms.Label label33;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.CheckBox checkBox1;
-		private System.Windows.Forms.Label label31;
+		private System.Windows.Forms.TextBox ctrl_right_eye_desc;
+		private System.Windows.Forms.CheckBox ctrl_right_eye;
+		private System.Windows.Forms.Label ctrl_right_eye_label;
 		private System.Windows.Forms.Label label30;
-		private System.Windows.Forms.CheckBox checkBox12;
-		private System.Windows.Forms.CheckBox checkBox11;
-		private System.Windows.Forms.CheckBox checkBox10;
-		private System.Windows.Forms.CheckBox checkBox9;
-		private System.Windows.Forms.CheckBox checkBox8;
-		private System.Windows.Forms.CheckBox checkBox7;
-		private System.Windows.Forms.CheckBox checkBox6;
-		private System.Windows.Forms.CheckBox checkBox5;
-		private System.Windows.Forms.CheckBox checkBox4;
-		private System.Windows.Forms.TextBox textBox16;
-		private System.Windows.Forms.CheckBox checkBox17;
-		private System.Windows.Forms.CheckBox checkBox18;
-		private System.Windows.Forms.CheckBox checkBox19;
-		private System.Windows.Forms.CheckBox checkBox20;
+		private System.Windows.Forms.CheckBox ctrl_adhd;
+		private System.Windows.Forms.CheckBox ctrl_nail_problem;
+		private System.Windows.Forms.CheckBox ctrl_pediculosis;
+		private System.Windows.Forms.CheckBox ctrl_adhd_add;
+		private System.Windows.Forms.CheckBox ctrl_depression;
+		private System.Windows.Forms.CheckBox ctrl_hair_problem;
+		private System.Windows.Forms.CheckBox ctrl_obesity;
+		private System.Windows.Forms.CheckBox ctrl_dermatitis;
+		private System.Windows.Forms.CheckBox ctrl_practical_obsession;
+		private System.Windows.Forms.TextBox ctrl_food_and_drug_allergies;
+		private System.Windows.Forms.CheckBox ctrl_genu_varum;
+		private System.Windows.Forms.CheckBox ctrl_genu_valgum;
+		private System.Windows.Forms.CheckBox ctrl_flat_foot;
+		private System.Windows.Forms.CheckBox ctrl_scoliosis;
 		private System.Windows.Forms.Label label37;
-		private System.Windows.Forms.CheckBox checkBox13;
-		private System.Windows.Forms.CheckBox checkBox14;
-		private System.Windows.Forms.CheckBox checkBox15;
-		private System.Windows.Forms.CheckBox checkBox16;
+		private System.Windows.Forms.CheckBox ctrl_goiter;
+		private System.Windows.Forms.CheckBox ctrl_ocd;
+		private System.Windows.Forms.CheckBox ctrl_chondromalacia;
+		private System.Windows.Forms.CheckBox ctrl_anemia;
 		private System.Windows.Forms.Label label36;
 		private System.Windows.Forms.Label label38;
 		private System.Windows.Forms.TextBox textBox17;
-		private System.Windows.Forms.CheckBox checkBox21;
-		private System.Windows.Forms.CheckBox checkBox22;
-		private System.Windows.Forms.CheckBox checkBox23;
-		private System.Windows.Forms.CheckBox checkBox24;
-		private System.Windows.Forms.CheckBox checkBox25;
-		private System.Windows.Forms.CheckBox checkBox26;
+		private System.Windows.Forms.CheckBox ctrl_behavioral_disorders;
+		private System.Windows.Forms.CheckBox ctrl_anxiety;
+		private System.Windows.Forms.CheckBox ctrl_phobia;
+		private System.Windows.Forms.CheckBox ctrl_personality_disorder;
+		private System.Windows.Forms.CheckBox ctrl_schizophrenia;
+		private System.Windows.Forms.CheckBox ctrl_learning_disorders;
 		private System.Windows.Forms.TextBox textBox18;
 		private System.Windows.Forms.Label label13;
 	}
