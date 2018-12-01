@@ -58,17 +58,17 @@
 			this.ctrl_obesity = new System.Windows.Forms.CheckBox();
 			this.ctrl_dermatitis = new System.Windows.Forms.CheckBox();
 			this.ctrl_practical_obsession = new System.Windows.Forms.CheckBox();
-			this.ctrl_ear_desc = new System.Windows.Forms.TextBox();
-			this.ctrl_ear = new System.Windows.Forms.CheckBox();
-			this.ctrl_ear_label = new System.Windows.Forms.Label();
+			this.ctrl_hear_desc = new System.Windows.Forms.TextBox();
+			this.ctrl_hear_problem = new System.Windows.Forms.CheckBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.label35 = new System.Windows.Forms.Label();
-			this.ctrl_elft_eye_desc = new System.Windows.Forms.TextBox();
-			this.ctrl_left_eye = new System.Windows.Forms.CheckBox();
+			this.label3 = new System.Windows.Forms.TextBox();
+			this.ctrl_left_eye_problem = new System.Windows.Forms.CheckBox();
 			this.ctrl_left_eye_label = new System.Windows.Forms.Label();
 			this.label33 = new System.Windows.Forms.Label();
 			this.ctrl_right_eye_desc = new System.Windows.Forms.TextBox();
-			this.ctrl_right_eye = new System.Windows.Forms.CheckBox();
-			this.ctrl_right_eye_label = new System.Windows.Forms.Label();
+			this.ctrl_right_eye_problem = new System.Windows.Forms.CheckBox();
+			this.label = new System.Windows.Forms.Label();
 			this.label30 = new System.Windows.Forms.Label();
 			this.ctrl_alt = new System.Windows.Forms.TextBox();
 			this.ctrl_ast = new System.Windows.Forms.TextBox();
@@ -79,23 +79,23 @@
 			this.ctrl_ldl = new System.Windows.Forms.TextBox();
 			this.ctrl_hdl = new System.Windows.Forms.TextBox();
 			this.ctrl_ldl_sdl_ratio = new System.Windows.Forms.TextBox();
-			this.label29 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
-			this.label26 = new System.Windows.Forms.Label();
-			this.label25 = new System.Windows.Forms.Label();
-			this.label24 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
+			this.lbl_fbs = new System.Windows.Forms.Label();
+			this.lbl_tsh = new System.Windows.Forms.Label();
+			this.lbl_tg = new System.Windows.Forms.Label();
+			this.lbl_ldl = new System.Windows.Forms.Label();
+			this.lbl_hdl = new System.Windows.Forms.Label();
+			this.lbl_ast = new System.Windows.Forms.Label();
+			this.lbl_alt = new System.Windows.Forms.Label();
 			this.label22 = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.ctrl_blood_group_rh = new System.Windows.Forms.TextBox();
+			this.lbl_ldl_sdl_ratio = new System.Windows.Forms.Label();
+			this.lbl_hb = new System.Windows.Forms.Label();
+			this.lbl_bg = new System.Windows.Forms.Label();
+			this.ctrl_bg = new System.Windows.Forms.TextBox();
 			this.ctrl_national_id = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
+			this.lbl_national_id = new System.Windows.Forms.Label();
 			this.ctrl_name = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
+			this.lbl_name = new System.Windows.Forms.Label();
 			this.ctrl_sbp = new System.Windows.Forms.TextBox();
 			this.ctrl_dbp = new System.Windows.Forms.TextBox();
 			this.ctrl_bmi = new System.Windows.Forms.TextBox();
@@ -104,10 +104,10 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.ctrl_height = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
+			this.lbl_bp = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.ctrl_weight_label = new System.Windows.Forms.Label();
-			this.ctrl_height_label = new System.Windows.Forms.Label();
+			this.lbl_weight = new System.Windows.Forms.Label();
+			this.lbl_height = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.ctrl_grade = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -163,17 +163,17 @@
 			this.tabPage1.Controls.Add(this.ctrl_obesity);
 			this.tabPage1.Controls.Add(this.ctrl_dermatitis);
 			this.tabPage1.Controls.Add(this.ctrl_practical_obsession);
-			this.tabPage1.Controls.Add(this.ctrl_ear_desc);
-			this.tabPage1.Controls.Add(this.ctrl_ear);
-			this.tabPage1.Controls.Add(this.ctrl_ear_label);
+			this.tabPage1.Controls.Add(this.ctrl_hear_desc);
+			this.tabPage1.Controls.Add(this.ctrl_hear_problem);
+			this.tabPage1.Controls.Add(this.label4);
 			this.tabPage1.Controls.Add(this.label35);
-			this.tabPage1.Controls.Add(this.ctrl_elft_eye_desc);
-			this.tabPage1.Controls.Add(this.ctrl_left_eye);
+			this.tabPage1.Controls.Add(this.label3);
+			this.tabPage1.Controls.Add(this.ctrl_left_eye_problem);
 			this.tabPage1.Controls.Add(this.ctrl_left_eye_label);
 			this.tabPage1.Controls.Add(this.label33);
 			this.tabPage1.Controls.Add(this.ctrl_right_eye_desc);
-			this.tabPage1.Controls.Add(this.ctrl_right_eye);
-			this.tabPage1.Controls.Add(this.ctrl_right_eye_label);
+			this.tabPage1.Controls.Add(this.ctrl_right_eye_problem);
+			this.tabPage1.Controls.Add(this.label);
 			this.tabPage1.Controls.Add(this.label30);
 			this.tabPage1.Controls.Add(this.ctrl_alt);
 			this.tabPage1.Controls.Add(this.ctrl_ast);
@@ -184,23 +184,23 @@
 			this.tabPage1.Controls.Add(this.ctrl_ldl);
 			this.tabPage1.Controls.Add(this.ctrl_hdl);
 			this.tabPage1.Controls.Add(this.ctrl_ldl_sdl_ratio);
-			this.tabPage1.Controls.Add(this.label29);
-			this.tabPage1.Controls.Add(this.label28);
-			this.tabPage1.Controls.Add(this.label27);
-			this.tabPage1.Controls.Add(this.label26);
-			this.tabPage1.Controls.Add(this.label25);
-			this.tabPage1.Controls.Add(this.label24);
-			this.tabPage1.Controls.Add(this.label23);
+			this.tabPage1.Controls.Add(this.lbl_fbs);
+			this.tabPage1.Controls.Add(this.lbl_tsh);
+			this.tabPage1.Controls.Add(this.lbl_tg);
+			this.tabPage1.Controls.Add(this.lbl_ldl);
+			this.tabPage1.Controls.Add(this.lbl_hdl);
+			this.tabPage1.Controls.Add(this.lbl_ast);
+			this.tabPage1.Controls.Add(this.lbl_alt);
 			this.tabPage1.Controls.Add(this.label22);
 			this.tabPage1.Controls.Add(this.label20);
-			this.tabPage1.Controls.Add(this.label12);
-			this.tabPage1.Controls.Add(this.label11);
-			this.tabPage1.Controls.Add(this.label10);
-			this.tabPage1.Controls.Add(this.ctrl_blood_group_rh);
+			this.tabPage1.Controls.Add(this.lbl_ldl_sdl_ratio);
+			this.tabPage1.Controls.Add(this.lbl_hb);
+			this.tabPage1.Controls.Add(this.lbl_bg);
+			this.tabPage1.Controls.Add(this.ctrl_bg);
 			this.tabPage1.Controls.Add(this.ctrl_national_id);
-			this.tabPage1.Controls.Add(this.label4);
+			this.tabPage1.Controls.Add(this.lbl_national_id);
 			this.tabPage1.Controls.Add(this.ctrl_name);
-			this.tabPage1.Controls.Add(this.label3);
+			this.tabPage1.Controls.Add(this.lbl_name);
 			this.tabPage1.Controls.Add(this.ctrl_sbp);
 			this.tabPage1.Controls.Add(this.ctrl_dbp);
 			this.tabPage1.Controls.Add(this.ctrl_bmi);
@@ -209,10 +209,10 @@
 			this.tabPage1.Controls.Add(this.label8);
 			this.tabPage1.Controls.Add(this.ctrl_height);
 			this.tabPage1.Controls.Add(this.label7);
-			this.tabPage1.Controls.Add(this.label6);
+			this.tabPage1.Controls.Add(this.lbl_bp);
 			this.tabPage1.Controls.Add(this.label5);
-			this.tabPage1.Controls.Add(this.ctrl_weight_label);
-			this.tabPage1.Controls.Add(this.ctrl_height_label);
+			this.tabPage1.Controls.Add(this.lbl_weight);
+			this.tabPage1.Controls.Add(this.lbl_height);
 			this.tabPage1.Controls.Add(this.label2);
 			this.tabPage1.Controls.Add(this.ctrl_grade);
 			this.tabPage1.Controls.Add(this.label1);
@@ -375,7 +375,6 @@
 			this.ctrl_ocd.TabIndex = 47;
 			this.ctrl_ocd.Text = "وسواس فکری";
 			this.ctrl_ocd.UseVisualStyleBackColor = true;
-			this.ctrl_ocd.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
 			// 
 			// ctrl_chondromalacia
 			// 
@@ -496,31 +495,33 @@
 			this.ctrl_practical_obsession.Text = "وسواس عملی";
 			this.ctrl_practical_obsession.UseVisualStyleBackColor = true;
 			// 
-			// ctrl_ear_desc
+			// ctrl_hear_desc
 			// 
-			this.ctrl_ear_desc.Location = new System.Drawing.Point(9, 301);
-			this.ctrl_ear_desc.Name = "ctrl_ear_desc";
-			this.ctrl_ear_desc.Size = new System.Drawing.Size(770, 20);
-			this.ctrl_ear_desc.TabIndex = 30;
+			this.ctrl_hear_desc.Location = new System.Drawing.Point(9, 301);
+			this.ctrl_hear_desc.Name = "ctrl_hear_desc";
+			this.ctrl_hear_desc.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_hear_desc.TabIndex = 30;
+			this.ctrl_hear_desc.TextChanged += new System.EventHandler(this.ctrl_hear_desc_TextChanged);
 			// 
-			// ctrl_ear
+			// ctrl_hear_problem
 			// 
-			this.ctrl_ear.AutoSize = true;
-			this.ctrl_ear.Location = new System.Drawing.Point(847, 303);
-			this.ctrl_ear.Name = "ctrl_ear";
-			this.ctrl_ear.Size = new System.Drawing.Size(48, 17);
-			this.ctrl_ear.TabIndex = 28;
-			this.ctrl_ear.Text = "ندارد";
-			this.ctrl_ear.UseVisualStyleBackColor = true;
+			this.ctrl_hear_problem.AutoSize = true;
+			this.ctrl_hear_problem.Enabled = false;
+			this.ctrl_hear_problem.Location = new System.Drawing.Point(847, 303);
+			this.ctrl_hear_problem.Name = "ctrl_hear_problem";
+			this.ctrl_hear_problem.Size = new System.Drawing.Size(48, 17);
+			this.ctrl_hear_problem.TabIndex = 28;
+			this.ctrl_hear_problem.Text = "ندارد";
+			this.ctrl_hear_problem.UseVisualStyleBackColor = true;
 			// 
-			// ctrl_ear_label
+			// label4
 			// 
-			this.ctrl_ear_label.AutoSize = true;
-			this.ctrl_ear_label.Location = new System.Drawing.Point(780, 304);
-			this.ctrl_ear_label.Name = "ctrl_ear_label";
-			this.ctrl_ear_label.Size = new System.Drawing.Size(52, 13);
-			this.ctrl_ear_label.TabIndex = 29;
-			this.ctrl_ear_label.Text = "توضیحات:";
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(780, 304);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(52, 13);
+			this.label4.TabIndex = 29;
+			this.label4.Text = "توضیحات:";
 			// 
 			// label35
 			// 
@@ -531,22 +532,24 @@
 			this.label35.TabIndex = 27;
 			this.label35.Text = "مشکل شنوایی:";
 			// 
-			// ctrl_elft_eye_desc
+			// label3
 			// 
-			this.ctrl_elft_eye_desc.Location = new System.Drawing.Point(9, 275);
-			this.ctrl_elft_eye_desc.Name = "ctrl_elft_eye_desc";
-			this.ctrl_elft_eye_desc.Size = new System.Drawing.Size(770, 20);
-			this.ctrl_elft_eye_desc.TabIndex = 26;
+			this.label3.Location = new System.Drawing.Point(9, 275);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(770, 20);
+			this.label3.TabIndex = 26;
+			this.label3.TextChanged += new System.EventHandler(this.ctrl_left_eye_desc_TextChanged);
 			// 
-			// ctrl_left_eye
+			// ctrl_left_eye_problem
 			// 
-			this.ctrl_left_eye.AutoSize = true;
-			this.ctrl_left_eye.Location = new System.Drawing.Point(847, 277);
-			this.ctrl_left_eye.Name = "ctrl_left_eye";
-			this.ctrl_left_eye.Size = new System.Drawing.Size(47, 17);
-			this.ctrl_left_eye.TabIndex = 24;
-			this.ctrl_left_eye.Text = "سالم";
-			this.ctrl_left_eye.UseVisualStyleBackColor = true;
+			this.ctrl_left_eye_problem.AutoSize = true;
+			this.ctrl_left_eye_problem.Enabled = false;
+			this.ctrl_left_eye_problem.Location = new System.Drawing.Point(847, 277);
+			this.ctrl_left_eye_problem.Name = "ctrl_left_eye_problem";
+			this.ctrl_left_eye_problem.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_left_eye_problem.TabIndex = 24;
+			this.ctrl_left_eye_problem.Text = "سالم";
+			this.ctrl_left_eye_problem.UseVisualStyleBackColor = true;
 			// 
 			// ctrl_left_eye_label
 			// 
@@ -572,25 +575,27 @@
 			this.ctrl_right_eye_desc.Name = "ctrl_right_eye_desc";
 			this.ctrl_right_eye_desc.Size = new System.Drawing.Size(770, 20);
 			this.ctrl_right_eye_desc.TabIndex = 22;
+			this.ctrl_right_eye_desc.TextChanged += new System.EventHandler(this.ctrl_right_eye_desc_TextChanged);
 			// 
-			// ctrl_right_eye
+			// ctrl_right_eye_problem
 			// 
-			this.ctrl_right_eye.AutoSize = true;
-			this.ctrl_right_eye.Location = new System.Drawing.Point(847, 251);
-			this.ctrl_right_eye.Name = "ctrl_right_eye";
-			this.ctrl_right_eye.Size = new System.Drawing.Size(47, 17);
-			this.ctrl_right_eye.TabIndex = 20;
-			this.ctrl_right_eye.Text = "سالم";
-			this.ctrl_right_eye.UseVisualStyleBackColor = true;
+			this.ctrl_right_eye_problem.AutoSize = true;
+			this.ctrl_right_eye_problem.Enabled = false;
+			this.ctrl_right_eye_problem.Location = new System.Drawing.Point(847, 251);
+			this.ctrl_right_eye_problem.Name = "ctrl_right_eye_problem";
+			this.ctrl_right_eye_problem.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_right_eye_problem.TabIndex = 20;
+			this.ctrl_right_eye_problem.Text = "سالم";
+			this.ctrl_right_eye_problem.UseVisualStyleBackColor = true;
 			// 
-			// ctrl_right_eye_label
+			// label
 			// 
-			this.ctrl_right_eye_label.AutoSize = true;
-			this.ctrl_right_eye_label.Location = new System.Drawing.Point(780, 252);
-			this.ctrl_right_eye_label.Name = "ctrl_right_eye_label";
-			this.ctrl_right_eye_label.Size = new System.Drawing.Size(57, 13);
-			this.ctrl_right_eye_label.TabIndex = 21;
-			this.ctrl_right_eye_label.Text = "علت ارجاع:";
+			this.label.AutoSize = true;
+			this.label.Location = new System.Drawing.Point(780, 252);
+			this.label.Name = "label";
+			this.label.Size = new System.Drawing.Size(57, 13);
+			this.label.TabIndex = 21;
+			this.label.Text = "علت ارجاع:";
 			// 
 			// label30
 			// 
@@ -607,6 +612,7 @@
 			this.ctrl_alt.Name = "ctrl_alt";
 			this.ctrl_alt.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_alt.TabIndex = 18;
+			this.ctrl_alt.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_alt_Validating);
 			// 
 			// ctrl_ast
 			// 
@@ -614,6 +620,7 @@
 			this.ctrl_ast.Name = "ctrl_ast";
 			this.ctrl_ast.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_ast.TabIndex = 17;
+			this.ctrl_ast.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_ast_Validating);
 			// 
 			// ctrl_hb
 			// 
@@ -621,6 +628,7 @@
 			this.ctrl_hb.Name = "ctrl_hb";
 			this.ctrl_hb.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_hb.TabIndex = 10;
+			this.ctrl_hb.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_hb_Validating);
 			// 
 			// ctrl_fbs
 			// 
@@ -628,6 +636,7 @@
 			this.ctrl_fbs.Name = "ctrl_fbs";
 			this.ctrl_fbs.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_fbs.TabIndex = 11;
+			this.ctrl_fbs.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_fbs_Validating);
 			// 
 			// ctrl_tsh
 			// 
@@ -635,7 +644,7 @@
 			this.ctrl_tsh.Name = "ctrl_tsh";
 			this.ctrl_tsh.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_tsh.TabIndex = 12;
-			this.ctrl_tsh.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+			this.ctrl_tsh.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_tsh_Validating);
 			// 
 			// ctrl_tg
 			// 
@@ -643,7 +652,7 @@
 			this.ctrl_tg.Name = "ctrl_tg";
 			this.ctrl_tg.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_tg.TabIndex = 13;
-			this.ctrl_tg.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+			this.ctrl_tg.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_tg_Validating);
 			// 
 			// ctrl_ldl
 			// 
@@ -651,7 +660,7 @@
 			this.ctrl_ldl.Name = "ctrl_ldl";
 			this.ctrl_ldl.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_ldl.TabIndex = 14;
-			this.ctrl_ldl.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+			this.ctrl_ldl.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_ldl_Validating);
 			// 
 			// ctrl_hdl
 			// 
@@ -659,7 +668,7 @@
 			this.ctrl_hdl.Name = "ctrl_hdl";
 			this.ctrl_hdl.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_hdl.TabIndex = 15;
-			this.ctrl_hdl.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+			this.ctrl_hdl.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_hdl_Validating);
 			// 
 			// ctrl_ldl_sdl_ratio
 			// 
@@ -667,74 +676,70 @@
 			this.ctrl_ldl_sdl_ratio.Name = "ctrl_ldl_sdl_ratio";
 			this.ctrl_ldl_sdl_ratio.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_ldl_sdl_ratio.TabIndex = 16;
-			this.ctrl_ldl_sdl_ratio.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+			this.ctrl_ldl_sdl_ratio.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_ldl_sdl_ratio_Validating);
 			// 
-			// label29
+			// lbl_fbs
 			// 
-			this.label29.AutoSize = true;
-			this.label29.Location = new System.Drawing.Point(193, 154);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(27, 13);
-			this.label29.TabIndex = 40;
-			this.label29.Text = "FBS";
+			this.lbl_fbs.AutoSize = true;
+			this.lbl_fbs.Location = new System.Drawing.Point(193, 154);
+			this.lbl_fbs.Name = "lbl_fbs";
+			this.lbl_fbs.Size = new System.Drawing.Size(27, 13);
+			this.lbl_fbs.TabIndex = 40;
+			this.lbl_fbs.Text = "FBS";
 			// 
-			// label28
+			// lbl_tsh
 			// 
-			this.label28.AutoSize = true;
-			this.label28.Location = new System.Drawing.Point(962, 183);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(29, 13);
-			this.label28.TabIndex = 39;
-			this.label28.Text = "TSH";
-			this.label28.Click += new System.EventHandler(this.label28_Click);
+			this.lbl_tsh.AutoSize = true;
+			this.lbl_tsh.Location = new System.Drawing.Point(962, 183);
+			this.lbl_tsh.Name = "lbl_tsh";
+			this.lbl_tsh.Size = new System.Drawing.Size(29, 13);
+			this.lbl_tsh.TabIndex = 39;
+			this.lbl_tsh.Text = "TSH";
 			// 
-			// label27
+			// lbl_tg
 			// 
-			this.label27.AutoSize = true;
-			this.label27.Location = new System.Drawing.Point(812, 183);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(22, 13);
-			this.label27.TabIndex = 38;
-			this.label27.Text = "TG";
-			this.label27.Click += new System.EventHandler(this.label27_Click);
+			this.lbl_tg.AutoSize = true;
+			this.lbl_tg.Location = new System.Drawing.Point(812, 183);
+			this.lbl_tg.Name = "lbl_tg";
+			this.lbl_tg.Size = new System.Drawing.Size(22, 13);
+			this.lbl_tg.TabIndex = 38;
+			this.lbl_tg.Text = "TG";
 			// 
-			// label26
+			// lbl_ldl
 			// 
-			this.label26.AutoSize = true;
-			this.label26.Location = new System.Drawing.Point(658, 183);
-			this.label26.Name = "label26";
-			this.label26.Size = new System.Drawing.Size(27, 13);
-			this.label26.TabIndex = 37;
-			this.label26.Text = "LDL";
-			this.label26.Click += new System.EventHandler(this.label26_Click);
+			this.lbl_ldl.AutoSize = true;
+			this.lbl_ldl.Location = new System.Drawing.Point(658, 183);
+			this.lbl_ldl.Name = "lbl_ldl";
+			this.lbl_ldl.Size = new System.Drawing.Size(27, 13);
+			this.lbl_ldl.TabIndex = 37;
+			this.lbl_ldl.Text = "LDL";
 			// 
-			// label25
+			// lbl_hdl
 			// 
-			this.label25.AutoSize = true;
-			this.label25.Location = new System.Drawing.Point(501, 183);
-			this.label25.Name = "label25";
-			this.label25.Size = new System.Drawing.Size(29, 13);
-			this.label25.TabIndex = 36;
-			this.label25.Text = "HDL";
-			this.label25.Click += new System.EventHandler(this.label25_Click);
+			this.lbl_hdl.AutoSize = true;
+			this.lbl_hdl.Location = new System.Drawing.Point(501, 183);
+			this.lbl_hdl.Name = "lbl_hdl";
+			this.lbl_hdl.Size = new System.Drawing.Size(29, 13);
+			this.lbl_hdl.TabIndex = 36;
+			this.lbl_hdl.Text = "HDL";
 			// 
-			// label24
+			// lbl_ast
 			// 
-			this.label24.AutoSize = true;
-			this.label24.Location = new System.Drawing.Point(896, 215);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(95, 13);
-			this.label24.TabIndex = 35;
-			this.label24.Text = "AST (بر حسب U/L)";
+			this.lbl_ast.AutoSize = true;
+			this.lbl_ast.Location = new System.Drawing.Point(896, 215);
+			this.lbl_ast.Name = "lbl_ast";
+			this.lbl_ast.Size = new System.Drawing.Size(95, 13);
+			this.lbl_ast.TabIndex = 35;
+			this.lbl_ast.Text = "AST (بر حسب U/L)";
 			// 
-			// label23
+			// lbl_alt
 			// 
-			this.label23.AutoSize = true;
-			this.label23.Location = new System.Drawing.Point(678, 215);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(94, 13);
-			this.label23.TabIndex = 34;
-			this.label23.Text = "ALT (بر حسب U/L)";
+			this.lbl_alt.AutoSize = true;
+			this.lbl_alt.Location = new System.Drawing.Point(678, 215);
+			this.lbl_alt.Name = "lbl_alt";
+			this.lbl_alt.Size = new System.Drawing.Size(94, 13);
+			this.lbl_alt.TabIndex = 34;
+			this.lbl_alt.Text = "ALT (بر حسب U/L)";
 			// 
 			// label22
 			// 
@@ -754,40 +759,40 @@
 			this.label20.TabIndex = 31;
 			this.label20.Text = "سایر موارد:";
 			// 
-			// label12
+			// lbl_ldl_sdl_ratio
 			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(290, 183);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(81, 13);
-			this.label12.TabIndex = 23;
-			this.label12.Text = "LDL/SDL Ratio";
-			this.label12.Click += new System.EventHandler(this.label12_Click);
+			this.lbl_ldl_sdl_ratio.AutoSize = true;
+			this.lbl_ldl_sdl_ratio.Location = new System.Drawing.Point(290, 183);
+			this.lbl_ldl_sdl_ratio.Name = "lbl_ldl_sdl_ratio";
+			this.lbl_ldl_sdl_ratio.Size = new System.Drawing.Size(81, 13);
+			this.lbl_ldl_sdl_ratio.TabIndex = 23;
+			this.lbl_ldl_sdl_ratio.Text = "LDL/SDL Ratio";
 			// 
-			// label11
+			// lbl_hb
 			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(341, 154);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(21, 13);
-			this.label11.TabIndex = 22;
-			this.label11.Text = "Hb";
+			this.lbl_hb.AutoSize = true;
+			this.lbl_hb.Location = new System.Drawing.Point(341, 154);
+			this.lbl_hb.Name = "lbl_hb";
+			this.lbl_hb.Size = new System.Drawing.Size(21, 13);
+			this.lbl_hb.TabIndex = 22;
+			this.lbl_hb.Text = "Hb";
 			// 
-			// label10
+			// lbl_bg
 			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(492, 154);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(61, 13);
-			this.label10.TabIndex = 21;
-			this.label10.Text = "گروه خونی";
+			this.lbl_bg.AutoSize = true;
+			this.lbl_bg.Location = new System.Drawing.Point(492, 154);
+			this.lbl_bg.Name = "lbl_bg";
+			this.lbl_bg.Size = new System.Drawing.Size(61, 13);
+			this.lbl_bg.TabIndex = 21;
+			this.lbl_bg.Text = "گروه خونی";
 			// 
-			// ctrl_blood_group_rh
+			// ctrl_bg
 			// 
-			this.ctrl_blood_group_rh.Location = new System.Drawing.Point(386, 151);
-			this.ctrl_blood_group_rh.Name = "ctrl_blood_group_rh";
-			this.ctrl_blood_group_rh.Size = new System.Drawing.Size(100, 20);
-			this.ctrl_blood_group_rh.TabIndex = 9;
+			this.ctrl_bg.Location = new System.Drawing.Point(386, 151);
+			this.ctrl_bg.Name = "ctrl_bg";
+			this.ctrl_bg.Size = new System.Drawing.Size(100, 20);
+			this.ctrl_bg.TabIndex = 9;
+			this.ctrl_bg.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_bg_Validating);
 			// 
 			// ctrl_national_id
 			// 
@@ -795,15 +800,16 @@
 			this.ctrl_national_id.Name = "ctrl_national_id";
 			this.ctrl_national_id.Size = new System.Drawing.Size(138, 20);
 			this.ctrl_national_id.TabIndex = 1;
+			this.ctrl_national_id.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_national_id_Validating);
 			// 
-			// label4
+			// lbl_national_id
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(948, 35);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(43, 13);
-			this.label4.TabIndex = 18;
-			this.label4.Text = "کد ملی:";
+			this.lbl_national_id.AutoSize = true;
+			this.lbl_national_id.Location = new System.Drawing.Point(948, 35);
+			this.lbl_national_id.Name = "lbl_national_id";
+			this.lbl_national_id.Size = new System.Drawing.Size(43, 13);
+			this.lbl_national_id.TabIndex = 18;
+			this.lbl_national_id.Text = "کد ملی:";
 			// 
 			// ctrl_name
 			// 
@@ -811,15 +817,16 @@
 			this.ctrl_name.Name = "ctrl_name";
 			this.ctrl_name.Size = new System.Drawing.Size(160, 20);
 			this.ctrl_name.TabIndex = 0;
+			this.ctrl_name.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_name_Validating);
 			// 
-			// label3
+			// lbl_name
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(968, 9);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(23, 13);
-			this.label3.TabIndex = 16;
-			this.label3.Text = "نام:";
+			this.lbl_name.AutoSize = true;
+			this.lbl_name.Location = new System.Drawing.Point(968, 9);
+			this.lbl_name.Name = "lbl_name";
+			this.lbl_name.Size = new System.Drawing.Size(23, 13);
+			this.lbl_name.TabIndex = 16;
+			this.lbl_name.Text = "نام:";
 			// 
 			// ctrl_sbp
 			// 
@@ -827,6 +834,7 @@
 			this.ctrl_sbp.Name = "ctrl_sbp";
 			this.ctrl_sbp.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_sbp.TabIndex = 7;
+			this.ctrl_sbp.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_sbp_Validating);
 			// 
 			// ctrl_dbp
 			// 
@@ -834,6 +842,7 @@
 			this.ctrl_dbp.Name = "ctrl_dbp";
 			this.ctrl_dbp.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_dbp.TabIndex = 8;
+			this.ctrl_dbp.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_dbp_Validating);
 			// 
 			// ctrl_bmi
 			// 
@@ -888,15 +897,15 @@
 			this.label7.TabIndex = 7;
 			this.label7.Text = "روی";
 			// 
-			// label6
+			// lbl_bp
 			// 
-			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(819, 154);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(172, 13);
-			this.label6.TabIndex = 6;
-			this.label6.Text = "فشار خون (بر حسب میلی لیتر جیوه):";
+			this.lbl_bp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.lbl_bp.AutoSize = true;
+			this.lbl_bp.Location = new System.Drawing.Point(819, 154);
+			this.lbl_bp.Name = "lbl_bp";
+			this.lbl_bp.Size = new System.Drawing.Size(172, 13);
+			this.lbl_bp.TabIndex = 6;
+			this.lbl_bp.Text = "فشار خون (بر حسب میلی لیتر جیوه):";
 			// 
 			// label5
 			// 
@@ -907,23 +916,23 @@
 			this.label5.TabIndex = 5;
 			this.label5.Text = "BMI:";
 			// 
-			// ctrl_weight_label
+			// lbl_weight
 			// 
-			this.ctrl_weight_label.AutoSize = true;
-			this.ctrl_weight_label.Location = new System.Drawing.Point(744, 122);
-			this.ctrl_weight_label.Name = "ctrl_weight_label";
-			this.ctrl_weight_label.Size = new System.Drawing.Size(28, 13);
-			this.ctrl_weight_label.TabIndex = 4;
-			this.ctrl_weight_label.Text = "وزن:";
+			this.lbl_weight.AutoSize = true;
+			this.lbl_weight.Location = new System.Drawing.Point(744, 122);
+			this.lbl_weight.Name = "lbl_weight";
+			this.lbl_weight.Size = new System.Drawing.Size(28, 13);
+			this.lbl_weight.TabIndex = 4;
+			this.lbl_weight.Text = "وزن:";
 			// 
-			// ctrl_height_label
+			// lbl_height
 			// 
-			this.ctrl_height_label.AutoSize = true;
-			this.ctrl_height_label.Location = new System.Drawing.Point(970, 122);
-			this.ctrl_height_label.Name = "ctrl_height_label";
-			this.ctrl_height_label.Size = new System.Drawing.Size(21, 13);
-			this.ctrl_height_label.TabIndex = 3;
-			this.ctrl_height_label.Text = "قد:";
+			this.lbl_height.AutoSize = true;
+			this.lbl_height.Location = new System.Drawing.Point(970, 122);
+			this.lbl_height.Name = "lbl_height";
+			this.lbl_height.Size = new System.Drawing.Size(21, 13);
+			this.lbl_height.TabIndex = 3;
+			this.lbl_height.Text = "قد:";
 			// 
 			// label2
 			// 
@@ -1043,16 +1052,16 @@
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.TextBox ctrl_height;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label lbl_bp;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label ctrl_weight_label;
-		private System.Windows.Forms.Label ctrl_height_label;
+		private System.Windows.Forms.Label lbl_weight;
+		private System.Windows.Forms.Label lbl_height;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button ctrl_save;
 		private System.Windows.Forms.TextBox ctrl_national_id;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label lbl_national_id;
 		private System.Windows.Forms.TextBox ctrl_name;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label lbl_name;
 		private System.Windows.Forms.TextBox ctrl_alt;
 		private System.Windows.Forms.TextBox ctrl_ast;
 		private System.Windows.Forms.TextBox ctrl_hb;
@@ -1062,30 +1071,30 @@
 		private System.Windows.Forms.TextBox ctrl_ldl;
 		private System.Windows.Forms.TextBox ctrl_hdl;
 		private System.Windows.Forms.TextBox ctrl_ldl_sdl_ratio;
-		private System.Windows.Forms.Label label29;
-		private System.Windows.Forms.Label label28;
-		private System.Windows.Forms.Label label27;
-		private System.Windows.Forms.Label label26;
-		private System.Windows.Forms.Label label25;
-		private System.Windows.Forms.Label label24;
-		private System.Windows.Forms.Label label23;
+		private System.Windows.Forms.Label lbl_fbs;
+		private System.Windows.Forms.Label lbl_tsh;
+		private System.Windows.Forms.Label lbl_tg;
+		private System.Windows.Forms.Label lbl_ldl;
+		private System.Windows.Forms.Label lbl_hdl;
+		private System.Windows.Forms.Label lbl_ast;
+		private System.Windows.Forms.Label lbl_alt;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Label label20;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.TextBox ctrl_blood_group_rh;
-		private System.Windows.Forms.TextBox ctrl_ear_desc;
-		private System.Windows.Forms.CheckBox ctrl_ear;
-		private System.Windows.Forms.Label ctrl_ear_label;
+		private System.Windows.Forms.Label lbl_ldl_sdl_ratio;
+		private System.Windows.Forms.Label lbl_hb;
+		private System.Windows.Forms.Label lbl_bg;
+		private System.Windows.Forms.TextBox ctrl_bg;
+		private System.Windows.Forms.TextBox ctrl_hear_desc;
+		private System.Windows.Forms.CheckBox ctrl_hear_problem;
+		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.TextBox ctrl_elft_eye_desc;
-		private System.Windows.Forms.CheckBox ctrl_left_eye;
+		private System.Windows.Forms.TextBox label3;
+		private System.Windows.Forms.CheckBox ctrl_left_eye_problem;
 		private System.Windows.Forms.Label ctrl_left_eye_label;
 		private System.Windows.Forms.Label label33;
 		private System.Windows.Forms.TextBox ctrl_right_eye_desc;
-		private System.Windows.Forms.CheckBox ctrl_right_eye;
-		private System.Windows.Forms.Label ctrl_right_eye_label;
+		private System.Windows.Forms.CheckBox ctrl_right_eye_problem;
+		private System.Windows.Forms.Label label;
 		private System.Windows.Forms.Label label30;
 		private System.Windows.Forms.CheckBox ctrl_adhd;
 		private System.Windows.Forms.CheckBox ctrl_nail_problem;

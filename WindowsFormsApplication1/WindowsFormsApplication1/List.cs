@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
 			var dic = new Dictionary<string, string>();
-			//dic["students"] = "دانش آموزان";
+			dic["students"] = "دانش آموزان";
 			dic["teachers"] = "معلمان";
 			var list = new List<string>();
 			var reader = DB.ExecuteReader("select name from sqlite_master where type='table'");
@@ -43,7 +43,7 @@ namespace WindowsFormsApplication1
 
 	    void Update()
 	    {
-			_ad.Update(_dt);
+			_ad.Update(_dt);  // update database based on data table
 			btnEdit.Enabled = btnRemove.Enabled = _dt.Rows.Count != 0;
 		}
 	
@@ -51,7 +51,7 @@ namespace WindowsFormsApplication1
 		{
 			_dt.Rows.Add();
 			Debug.Assert(listBox1.SelectedItem is DataRowView);
-			if (new StudentsForm2(listBox1.SelectedItem as DataRowView).ShowDialog(this) == DialogResult.OK)
+			if (new StudentsForm2(_dt.Rows[listBox1.SelectedIndex]).ShowDialog(this) == DialogResult.OK)
 				Update();
 			else
 				_dt.Rows.RemoveAt(listBox1.SelectedIndex);
@@ -59,8 +59,7 @@ namespace WindowsFormsApplication1
 
 		private void btnEdit_Click(object sender, EventArgs e)
 		{
-			Debug.Assert(listBox1.SelectedItem is DataRowView);
-			if (new StudentsForm2(listBox1.SelectedItem as DataRowView).ShowDialog(this) == DialogResult.OK)
+			if (new StudentsForm2(_dt.Rows[listBox1.SelectedIndex]).ShowDialog(this) == DialogResult.OK)
 				Update();
 		}
 
