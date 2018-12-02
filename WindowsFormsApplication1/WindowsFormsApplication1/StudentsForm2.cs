@@ -172,68 +172,79 @@ namespace WindowsFormsApplication1
 		private void ctrl_national_id_Validating(object sender, CancelEventArgs e)
 		{
 			if ((sender as Control).Text.Length == 0)
-			//if (ctrl_national_id.Text.Length == 0)
 				e.Cancel = true;
 		}
 
 		private void ctrl_sbp_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_dbp_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_bg_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_hb_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_fbs_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_tsh_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_tg_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_ldl_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_hdl_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_ldl_sdl_ratio_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_ast_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 		private void ctrl_alt_Validating(object sender, CancelEventArgs e)
 		{
-
+			if ((sender as Control).Text.Length == 0)
+				e.Cancel = true;
 		}
 
 	}

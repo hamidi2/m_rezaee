@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.ctrl_behavioral_disorders = new System.Windows.Forms.CheckBox();
@@ -115,6 +116,7 @@
 			this.textBox18 = new System.Windows.Forms.TextBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.ctrl_save = new System.Windows.Forms.Button();
+			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -1126,6 +1128,7 @@
 		private System.Windows.Forms.CheckBox ctrl_learning_disorders;
 		private System.Windows.Forms.TextBox textBox18;
 		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.ToolTip toolTip1;
 	}
 }
 
