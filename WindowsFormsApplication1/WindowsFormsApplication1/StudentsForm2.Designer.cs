@@ -678,7 +678,6 @@
 			this.ctrl_ldl_sdl_ratio.Name = "ctrl_ldl_sdl_ratio";
 			this.ctrl_ldl_sdl_ratio.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_ldl_sdl_ratio.TabIndex = 16;
-			this.ctrl_ldl_sdl_ratio.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_ldl_sdl_ratio_Validating);
 			// 
 			// lbl_fbs
 			// 
@@ -790,8 +789,10 @@
 			// 
 			// ctrl_bg
 			// 
+			this.ctrl_bg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.ctrl_bg.Location = new System.Drawing.Point(386, 151);
 			this.ctrl_bg.Name = "ctrl_bg";
+			this.ctrl_bg.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.ctrl_bg.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_bg.TabIndex = 9;
 			this.ctrl_bg.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_bg_Validating);
@@ -800,6 +801,7 @@
 			// 
 			this.ctrl_national_id.Location = new System.Drawing.Point(804, 32);
 			this.ctrl_national_id.Name = "ctrl_national_id";
+			this.ctrl_national_id.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.ctrl_national_id.Size = new System.Drawing.Size(138, 20);
 			this.ctrl_national_id.TabIndex = 1;
 			this.ctrl_national_id.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_national_id_Validating);

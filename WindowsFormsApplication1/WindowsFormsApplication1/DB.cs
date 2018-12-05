@@ -26,7 +26,7 @@ height real, weight real,
 sbp integer,  /* blood_pressure_systole */
 dbp integer,  /* blood_pressure_diastole */
 hb real, fbs real,
-blood_group varchar(2), rh boolean,
+bg integer, rh boolean,
 tsh real, tg integer,
 ldl integer, hdl integer,
 ast integer, alt integer,

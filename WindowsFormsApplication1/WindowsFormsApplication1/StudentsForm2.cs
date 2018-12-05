@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsFormsApplication1
 {
@@ -42,14 +44,14 @@ namespace WindowsFormsApplication1
 		private void StudentsForm2_Load(object sender, EventArgs e)
 		{
 			ctrl_name.Text = GetString("name");
-			ctrl_national_id.Text = string.Format("{0}", _student["national_id"]);
+			ctrl_national_id.Text = string.Format("{0:D10}", _student["national_id"]);
 			ctrl_grade.SelectedIndex = GetInt("grade");
 			ctrl_food_and_drug_allergies.Text = GetString("food_and_drug_allergies");
 			ctrl_height.Text = GetStringFromReal("height");
 			ctrl_weight.Text = GetStringFromReal("weight");
 			ctrl_sbp.Text = GetString("sbp");
 			ctrl_dbp.Text = GetString("dbp");
-			ctrl_bg.Text = GetString("blood_group") + (GetInt("rh") == 0 ? "-" : "+");
+			ctrl_bg.Text = GetString("bg") + (GetInt("rh") == 0 ? "-" : "+");
 			ctrl_hb.Text = GetStringFromReal("hb");
 			ctrl_fbs.Text = GetStringFromReal("fbs");
 			ctrl_tsh.Text = GetStringFromReal("tsh");
@@ -126,24 +128,6 @@ namespace WindowsFormsApplication1
 			}
 		}
 
-		private void ctrl_height_Validating(object sender, CancelEventArgs e)
-		{
-			int h;
-			e.Cancel = !int.TryParse(ctrl_height.Text, out h);
-			lbl_height.ForeColor = e.Cancel ? Color.Red : Color.Black;
-			if (!e.Cancel)
-				_student["height"] = h;
-		}
-
-		private void ctrl_weight_Validating(object sender, CancelEventArgs e)
-		{
-			int w;
-			e.Cancel = !int.TryParse(ctrl_weight.Text, out w);
-			lbl_weight.ForeColor = e.Cancel ? Color.Red : Color.Black;
-			if (!e.Cancel)
-				_student["weight"] = w;
-		}
-
 		private void ctrl_right_eye_desc_TextChanged(object sender, EventArgs e)
 		{
 			ctrl_right_eye_problem.Checked = ctrl_right_eye_desc.Text.Length == 0;
@@ -159,6 +143,47 @@ namespace WindowsFormsApplication1
 			ctrl_hear_problem.Checked = ctrl_hear_desc.Text.Length == 0;
 		}
 
+		#region validating
+
+		enum FieldType
+		{
+			Int,
+			BloodGroup,
+		}
+
+		bool ValidateControl(Control ctrl, Control lbl, string fieldName, FieldType fieldType)
+		{
+			var isValid = false;
+			switch (fieldType)
+			{
+				case FieldType.Int:
+					int value;
+					if (!int.TryParse(ctrl.Text, out value))
+						break;
+					_student[fieldName] = value;
+					isValid = true;
+					break;
+				case FieldType.BloodGroup:
+					var text = ctrl.Text;
+					if (text.Length < 2 || text.Length > 3)
+						break;
+					if (!Regex.IsMatch(text, "[+-]$"))
+						break;
+					var len = text.Length;
+					var rh = text.Substring(len - 1) == "+";
+					text = text.Substring(0, len - 1);
+					var bg = text == "O" ? 0 : text == "A" ? 1 : text == "B" ? 2 : text == "AB" ? 3 : -1;
+					if (bg == -1)
+						break;
+					_student["bg"] = bg;
+					_student["rh"] = rh;
+					isValid = true;
+					break;
+			}
+			lbl.ForeColor = isValid ? Color.Black : Color.Red;
+			return isValid;
+		}
+
 		private void ctrl_name_Validating(object sender, CancelEventArgs e)
 		{
 			e.Cancel = true;
@@ -171,81 +196,75 @@ namespace WindowsFormsApplication1
 
 		private void ctrl_national_id_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_national_id, lbl_national_id, "national_id", FieldType.Int);
+		}
+
+		private void ctrl_height_Validating(object sender, CancelEventArgs e)
+		{
+			e.Cancel = !ValidateControl(ctrl_height, lbl_height, "height", FieldType.Int);
+		}
+
+		private void ctrl_weight_Validating(object sender, CancelEventArgs e)
+		{
+			e.Cancel = !ValidateControl(ctrl_weight, lbl_weight, "weight", FieldType.Int);
 		}
 
 		private void ctrl_sbp_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_sbp, lbl_bp, "sbp", FieldType.Int);
 		}
 
 		private void ctrl_dbp_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_dbp, lbl_bp, "dbp", FieldType.Int);
 		}
 
 		private void ctrl_bg_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_bg, lbl_bg, "bg", FieldType.BloodGroup);
 		}
 
 		private void ctrl_hb_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_hb, lbl_hb, "hb", FieldType.Int);
 		}
 
 		private void ctrl_fbs_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_fbs, lbl_fbs, "fbs", FieldType.Int);
 		}
 
 		private void ctrl_tsh_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_tsh, lbl_tsh, "tsh", FieldType.Int);
 		}
 
 		private void ctrl_tg_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_tg, lbl_tg, "tg", FieldType.Int);
 		}
 
 		private void ctrl_ldl_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_ldl, lbl_ldl, "ldl", FieldType.Int);
 		}
 
 		private void ctrl_hdl_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
-		}
-
-		private void ctrl_ldl_sdl_ratio_Validating(object sender, CancelEventArgs e)
-		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_hdl, lbl_hdl, "hdl", FieldType.Int);
 		}
 
 		private void ctrl_ast_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_ast, lbl_ast, "ast", FieldType.Int);
 		}
 
 		private void ctrl_alt_Validating(object sender, CancelEventArgs e)
 		{
-			if ((sender as Control).Text.Length == 0)
-				e.Cancel = true;
+			e.Cancel = !ValidateControl(ctrl_alt, lbl_alt, "alt", FieldType.Int);
 		}
+
+		#endregion
 
 	}
 }
