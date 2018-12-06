@@ -59,16 +59,16 @@
 			this.ctrl_obesity = new System.Windows.Forms.CheckBox();
 			this.ctrl_dermatitis = new System.Windows.Forms.CheckBox();
 			this.ctrl_practical_obsession = new System.Windows.Forms.CheckBox();
-			this.ctrl_hear_desc = new System.Windows.Forms.TextBox();
-			this.ctrl_hear_problem = new System.Windows.Forms.CheckBox();
+			this.ctrl_hear_problem = new System.Windows.Forms.TextBox();
+			this.ctrl_hear_problem_chk = new System.Windows.Forms.CheckBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label35 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.TextBox();
-			this.ctrl_left_eye_problem = new System.Windows.Forms.CheckBox();
+			this.ctrl_left_eye_problem = new System.Windows.Forms.TextBox();
+			this.ctrl_left_eye_problem_chk = new System.Windows.Forms.CheckBox();
 			this.ctrl_left_eye_label = new System.Windows.Forms.Label();
 			this.label33 = new System.Windows.Forms.Label();
-			this.ctrl_right_eye_desc = new System.Windows.Forms.TextBox();
-			this.ctrl_right_eye_problem = new System.Windows.Forms.CheckBox();
+			this.ctrl_right_eye_problem = new System.Windows.Forms.TextBox();
+			this.ctrl_right_eye_problem_chk = new System.Windows.Forms.CheckBox();
 			this.label = new System.Windows.Forms.Label();
 			this.label30 = new System.Windows.Forms.Label();
 			this.ctrl_alt = new System.Windows.Forms.TextBox();
@@ -113,7 +113,7 @@
 			this.ctrl_grade = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.textBox18 = new System.Windows.Forms.TextBox();
+			this.ctrl_considerations = new System.Windows.Forms.TextBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.ctrl_save = new System.Windows.Forms.Button();
 			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -165,16 +165,16 @@
 			this.tabPage1.Controls.Add(this.ctrl_obesity);
 			this.tabPage1.Controls.Add(this.ctrl_dermatitis);
 			this.tabPage1.Controls.Add(this.ctrl_practical_obsession);
-			this.tabPage1.Controls.Add(this.ctrl_hear_desc);
 			this.tabPage1.Controls.Add(this.ctrl_hear_problem);
+			this.tabPage1.Controls.Add(this.ctrl_hear_problem_chk);
 			this.tabPage1.Controls.Add(this.label4);
 			this.tabPage1.Controls.Add(this.label35);
-			this.tabPage1.Controls.Add(this.label3);
 			this.tabPage1.Controls.Add(this.ctrl_left_eye_problem);
+			this.tabPage1.Controls.Add(this.ctrl_left_eye_problem_chk);
 			this.tabPage1.Controls.Add(this.ctrl_left_eye_label);
 			this.tabPage1.Controls.Add(this.label33);
-			this.tabPage1.Controls.Add(this.ctrl_right_eye_desc);
 			this.tabPage1.Controls.Add(this.ctrl_right_eye_problem);
+			this.tabPage1.Controls.Add(this.ctrl_right_eye_problem_chk);
 			this.tabPage1.Controls.Add(this.label);
 			this.tabPage1.Controls.Add(this.label30);
 			this.tabPage1.Controls.Add(this.ctrl_alt);
@@ -476,6 +476,7 @@
 			this.ctrl_obesity.TabIndex = 52;
 			this.ctrl_obesity.Text = "اضافه وزن/چاقی";
 			this.ctrl_obesity.UseVisualStyleBackColor = true;
+			this.ctrl_obesity.CheckedChanged += new System.EventHandler(this.ctrl_obesity_CheckedChanged);
 			// 
 			// ctrl_dermatitis
 			// 
@@ -497,24 +498,24 @@
 			this.ctrl_practical_obsession.Text = "وسواس عملی";
 			this.ctrl_practical_obsession.UseVisualStyleBackColor = true;
 			// 
-			// ctrl_hear_desc
-			// 
-			this.ctrl_hear_desc.Location = new System.Drawing.Point(9, 301);
-			this.ctrl_hear_desc.Name = "ctrl_hear_desc";
-			this.ctrl_hear_desc.Size = new System.Drawing.Size(770, 20);
-			this.ctrl_hear_desc.TabIndex = 30;
-			this.ctrl_hear_desc.TextChanged += new System.EventHandler(this.ctrl_hear_desc_TextChanged);
-			// 
 			// ctrl_hear_problem
 			// 
-			this.ctrl_hear_problem.AutoSize = true;
-			this.ctrl_hear_problem.Enabled = false;
-			this.ctrl_hear_problem.Location = new System.Drawing.Point(847, 303);
+			this.ctrl_hear_problem.Location = new System.Drawing.Point(9, 301);
 			this.ctrl_hear_problem.Name = "ctrl_hear_problem";
-			this.ctrl_hear_problem.Size = new System.Drawing.Size(48, 17);
-			this.ctrl_hear_problem.TabIndex = 28;
-			this.ctrl_hear_problem.Text = "ندارد";
-			this.ctrl_hear_problem.UseVisualStyleBackColor = true;
+			this.ctrl_hear_problem.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_hear_problem.TabIndex = 30;
+			this.ctrl_hear_problem.TextChanged += new System.EventHandler(this.ctrl_hear_desc_TextChanged);
+			// 
+			// ctrl_hear_problem_chk
+			// 
+			this.ctrl_hear_problem_chk.AutoSize = true;
+			this.ctrl_hear_problem_chk.Enabled = false;
+			this.ctrl_hear_problem_chk.Location = new System.Drawing.Point(847, 303);
+			this.ctrl_hear_problem_chk.Name = "ctrl_hear_problem_chk";
+			this.ctrl_hear_problem_chk.Size = new System.Drawing.Size(48, 17);
+			this.ctrl_hear_problem_chk.TabIndex = 28;
+			this.ctrl_hear_problem_chk.Text = "ندارد";
+			this.ctrl_hear_problem_chk.UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
@@ -534,24 +535,24 @@
 			this.label35.TabIndex = 27;
 			this.label35.Text = "مشکل شنوایی:";
 			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(9, 275);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(770, 20);
-			this.label3.TabIndex = 26;
-			this.label3.TextChanged += new System.EventHandler(this.ctrl_left_eye_desc_TextChanged);
-			// 
 			// ctrl_left_eye_problem
 			// 
-			this.ctrl_left_eye_problem.AutoSize = true;
-			this.ctrl_left_eye_problem.Enabled = false;
-			this.ctrl_left_eye_problem.Location = new System.Drawing.Point(847, 277);
+			this.ctrl_left_eye_problem.Location = new System.Drawing.Point(9, 275);
 			this.ctrl_left_eye_problem.Name = "ctrl_left_eye_problem";
-			this.ctrl_left_eye_problem.Size = new System.Drawing.Size(47, 17);
-			this.ctrl_left_eye_problem.TabIndex = 24;
-			this.ctrl_left_eye_problem.Text = "سالم";
-			this.ctrl_left_eye_problem.UseVisualStyleBackColor = true;
+			this.ctrl_left_eye_problem.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_left_eye_problem.TabIndex = 26;
+			this.ctrl_left_eye_problem.TextChanged += new System.EventHandler(this.ctrl_left_eye_desc_TextChanged);
+			// 
+			// ctrl_left_eye_problem_chk
+			// 
+			this.ctrl_left_eye_problem_chk.AutoSize = true;
+			this.ctrl_left_eye_problem_chk.Enabled = false;
+			this.ctrl_left_eye_problem_chk.Location = new System.Drawing.Point(847, 277);
+			this.ctrl_left_eye_problem_chk.Name = "ctrl_left_eye_problem_chk";
+			this.ctrl_left_eye_problem_chk.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_left_eye_problem_chk.TabIndex = 24;
+			this.ctrl_left_eye_problem_chk.Text = "سالم";
+			this.ctrl_left_eye_problem_chk.UseVisualStyleBackColor = true;
 			// 
 			// ctrl_left_eye_label
 			// 
@@ -571,24 +572,24 @@
 			this.label33.TabIndex = 23;
 			this.label33.Text = "بینایی چشم چپ:";
 			// 
-			// ctrl_right_eye_desc
-			// 
-			this.ctrl_right_eye_desc.Location = new System.Drawing.Point(9, 249);
-			this.ctrl_right_eye_desc.Name = "ctrl_right_eye_desc";
-			this.ctrl_right_eye_desc.Size = new System.Drawing.Size(770, 20);
-			this.ctrl_right_eye_desc.TabIndex = 22;
-			this.ctrl_right_eye_desc.TextChanged += new System.EventHandler(this.ctrl_right_eye_desc_TextChanged);
-			// 
 			// ctrl_right_eye_problem
 			// 
-			this.ctrl_right_eye_problem.AutoSize = true;
-			this.ctrl_right_eye_problem.Enabled = false;
-			this.ctrl_right_eye_problem.Location = new System.Drawing.Point(847, 251);
+			this.ctrl_right_eye_problem.Location = new System.Drawing.Point(9, 249);
 			this.ctrl_right_eye_problem.Name = "ctrl_right_eye_problem";
-			this.ctrl_right_eye_problem.Size = new System.Drawing.Size(47, 17);
-			this.ctrl_right_eye_problem.TabIndex = 20;
-			this.ctrl_right_eye_problem.Text = "سالم";
-			this.ctrl_right_eye_problem.UseVisualStyleBackColor = true;
+			this.ctrl_right_eye_problem.Size = new System.Drawing.Size(770, 20);
+			this.ctrl_right_eye_problem.TabIndex = 22;
+			this.ctrl_right_eye_problem.TextChanged += new System.EventHandler(this.ctrl_right_eye_desc_TextChanged);
+			// 
+			// ctrl_right_eye_problem_chk
+			// 
+			this.ctrl_right_eye_problem_chk.AutoSize = true;
+			this.ctrl_right_eye_problem_chk.Enabled = false;
+			this.ctrl_right_eye_problem_chk.Location = new System.Drawing.Point(847, 251);
+			this.ctrl_right_eye_problem_chk.Name = "ctrl_right_eye_problem_chk";
+			this.ctrl_right_eye_problem_chk.Size = new System.Drawing.Size(47, 17);
+			this.ctrl_right_eye_problem_chk.TabIndex = 20;
+			this.ctrl_right_eye_problem_chk.Text = "سالم";
+			this.ctrl_right_eye_problem_chk.UseVisualStyleBackColor = true;
 			// 
 			// label
 			// 
@@ -662,6 +663,7 @@
 			this.ctrl_ldl.Name = "ctrl_ldl";
 			this.ctrl_ldl.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_ldl.TabIndex = 14;
+			this.ctrl_ldl.TextChanged += new System.EventHandler(this.ctrl_ldl_TextChanged);
 			this.ctrl_ldl.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_ldl_Validating);
 			// 
 			// ctrl_hdl
@@ -670,6 +672,7 @@
 			this.ctrl_hdl.Name = "ctrl_hdl";
 			this.ctrl_hdl.Size = new System.Drawing.Size(100, 20);
 			this.ctrl_hdl.TabIndex = 15;
+			this.ctrl_hdl.TextChanged += new System.EventHandler(this.ctrl_hdl_TextChanged);
 			this.ctrl_hdl.Validating += new System.ComponentModel.CancelEventHandler(this.ctrl_hdl_Validating);
 			// 
 			// ctrl_ldl_sdl_ratio
@@ -968,6 +971,7 @@
 			this.ctrl_grade.Name = "ctrl_grade";
 			this.ctrl_grade.Size = new System.Drawing.Size(121, 21);
 			this.ctrl_grade.TabIndex = 2;
+			this.ctrl_grade.SelectedIndexChanged += new System.EventHandler(this.ctrl_grade_SelectedIndexChanged);
 			// 
 			// label1
 			// 
@@ -980,7 +984,7 @@
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.textBox18);
+			this.tabPage2.Controls.Add(this.ctrl_considerations);
 			this.tabPage2.Controls.Add(this.label13);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
@@ -990,13 +994,13 @@
 			this.tabPage2.Text = "صفحه دوم";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// textBox18
+			// ctrl_considerations
 			// 
-			this.textBox18.Location = new System.Drawing.Point(8, 28);
-			this.textBox18.Multiline = true;
-			this.textBox18.Name = "textBox18";
-			this.textBox18.Size = new System.Drawing.Size(983, 274);
-			this.textBox18.TabIndex = 1;
+			this.ctrl_considerations.Location = new System.Drawing.Point(8, 28);
+			this.ctrl_considerations.Multiline = true;
+			this.ctrl_considerations.Name = "ctrl_considerations";
+			this.ctrl_considerations.Size = new System.Drawing.Size(983, 274);
+			this.ctrl_considerations.TabIndex = 1;
 			// 
 			// label13
 			// 
@@ -1088,16 +1092,16 @@
 		private System.Windows.Forms.Label lbl_hb;
 		private System.Windows.Forms.Label lbl_bg;
 		private System.Windows.Forms.TextBox ctrl_bg;
-		private System.Windows.Forms.TextBox ctrl_hear_desc;
-		private System.Windows.Forms.CheckBox ctrl_hear_problem;
+		private System.Windows.Forms.TextBox ctrl_hear_problem;
+		private System.Windows.Forms.CheckBox ctrl_hear_problem_chk;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.TextBox label3;
-		private System.Windows.Forms.CheckBox ctrl_left_eye_problem;
+		private System.Windows.Forms.TextBox ctrl_left_eye_problem;
+		private System.Windows.Forms.CheckBox ctrl_left_eye_problem_chk;
 		private System.Windows.Forms.Label ctrl_left_eye_label;
 		private System.Windows.Forms.Label label33;
-		private System.Windows.Forms.TextBox ctrl_right_eye_desc;
-		private System.Windows.Forms.CheckBox ctrl_right_eye_problem;
+		private System.Windows.Forms.TextBox ctrl_right_eye_problem;
+		private System.Windows.Forms.CheckBox ctrl_right_eye_problem_chk;
 		private System.Windows.Forms.Label label;
 		private System.Windows.Forms.Label label30;
 		private System.Windows.Forms.CheckBox ctrl_adhd;
@@ -1128,7 +1132,7 @@
 		private System.Windows.Forms.CheckBox ctrl_personality_disorder;
 		private System.Windows.Forms.CheckBox ctrl_schizophrenia;
 		private System.Windows.Forms.CheckBox ctrl_learning_disorders;
-		private System.Windows.Forms.TextBox textBox18;
+		private System.Windows.Forms.TextBox ctrl_considerations;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.ToolTip toolTip1;
 	}

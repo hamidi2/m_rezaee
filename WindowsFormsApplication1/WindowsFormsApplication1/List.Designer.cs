@@ -101,11 +101,12 @@
 			this.Controls.Add(this.listBox1);
 			this.Controls.Add(this.comboBox1);
 			this.KeyPreview = true;
+			this.MaximizeBox = false;
 			this.Name = "List";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.RightToLeftLayout = true;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "List";
+			this.Text = "معاینات و آزمایشات پزشکی";
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.List_KeyDown);
 			this.ResumeLayout(false);
 
