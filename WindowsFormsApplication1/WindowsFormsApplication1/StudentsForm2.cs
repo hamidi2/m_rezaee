@@ -21,6 +21,13 @@ namespace WindowsFormsApplication1
 			_student = student;
 		}
 
+		string GetRH()
+		{
+			if (_student["bg"] is DBNull || _student["rh"] is DBNull)
+				return "";
+			return IntToBG(GetInt("bg")) + ((bool) _student["rh"] ? "+" : "-");
+		}
+
 		bool GetBool(string fieldName)
 		{
 			return (bool)(_student[fieldName] is DBNull ? false : _student[fieldName]);
@@ -28,7 +35,7 @@ namespace WindowsFormsApplication1
 
 		int GetInt(string fieldName)
 		{
-			return (int)(long)(_student[fieldName] is DBNull ? 0 : _student[fieldName]);
+			return (int)(long)(_student[fieldName] is DBNull ? 0l : _student[fieldName]);
 		}
 
 		string GetString(string fieldName)
@@ -38,7 +45,7 @@ namespace WindowsFormsApplication1
 
 		string GetStringFromReal(string fieldName)
 		{
-			return _student[fieldName] is DBNull ? "" : _student[fieldName].ToString();
+			return _student[fieldName] is DBNull ? "" : ((double)_student[fieldName]).ToString("n2");
 		}
 
 		string IntToBG(int bg)
@@ -56,7 +63,7 @@ namespace WindowsFormsApplication1
 			ctrl_weight.Text = GetStringFromReal("weight");
 			ctrl_sbp.Text = GetString("sbp");
 			ctrl_dbp.Text = GetString("dbp");
-			ctrl_bg.Text = IntToBG(GetInt("bg")) + (GetBool("rh") ? "+" : "-");
+			ctrl_bg.Text = GetRH();
 			ctrl_hb.Text = GetStringFromReal("hb");
 			ctrl_fbs.Text = GetStringFromReal("fbs");
 			ctrl_tsh.Text = GetStringFromReal("tsh");
@@ -211,56 +218,57 @@ namespace WindowsFormsApplication1
 
 		bool ValidateControl(Control ctrl, Control lbl, string fieldName, FieldType fieldType)
 		{
-			var isValid = false;
-			switch (fieldType)
-			{
-				case FieldType.Int:
+			var isValid = !ctrl.Enabled;
+			if (!isValid)
+				switch (fieldType)
 				{
-					int value;
-					if (!int.TryParse(ctrl.Text, out value))
+					case FieldType.Int:
+					{
+						int value;
+						if (!int.TryParse(ctrl.Text, out value))
+							break;
+						_student[fieldName] = value;
+						isValid = true;
 						break;
-					_student[fieldName] = value;
-					isValid = true;
-					break;
+					}
+					case FieldType.Real:
+					{
+						float value;
+						if (!float.TryParse(ctrl.Text, out value))
+							break;
+						_student[fieldName] = value;
+						isValid = true;
+						break;
+					}
+					case FieldType.BloodGroup:
+					{
+						var text = ctrl.Text;
+						if (text.Length < 2 || text.Length > 3)
+							break;
+						if (!Regex.IsMatch(text, "[+-]$"))
+							break;
+						var len = text.Length;
+						var rh = text.Substring(len - 1) == "+";
+						text = text.Substring(0, len - 1);
+						var bg = text == "O" ? 0 : text == "A" ? 1 : text == "B" ? 2 : text == "AB" ? 3 : -1;
+						if (bg == -1)
+							break;
+						_student["bg"] = bg;
+						_student["rh"] = rh;
+						isValid = true;
+						break;
+					}
+					case FieldType.Name:
+					{
+						if (ctrl.Text.IndexOf(" ") == -1 ||
+							ctrl.Text.Length < 3 ||
+							Regex.IsMatch(ctrl.Text, @"[a-zA-Z0-9]"))
+							break;
+						_student[fieldName] = ctrl.Text;
+						isValid = true;
+						break;
+					}
 				}
-				case FieldType.Real:
-				{
-					float value;
-					if (!float.TryParse(ctrl.Text, out value))
-						break;
-					_student[fieldName] = value;
-					isValid = true;
-					break;
-				}
-				case FieldType.BloodGroup:
-				{
-					var text = ctrl.Text;
-					if (text.Length < 2 || text.Length > 3)
-						break;
-					if (!Regex.IsMatch(text, "[+-]$"))
-						break;
-					var len = text.Length;
-					var rh = text.Substring(len - 1) == "+";
-					text = text.Substring(0, len - 1);
-					var bg = text == "O" ? 0 : text == "A" ? 1 : text == "B" ? 2 : text == "AB" ? 3 : -1;
-					if (bg == -1)
-						break;
-					_student["bg"] = bg;
-					_student["rh"] = rh;
-					isValid = true;
-					break;
-				}
-				case FieldType.Name:
-				{
-					if (ctrl.Text.IndexOf(" ") == -1 ||
-						ctrl.Text.Length < 3 ||
-						Regex.IsMatch(ctrl.Text, @"[a-zA-Z0-9]"))
-						break;
-					_student[fieldName] = ctrl.Text;
-					isValid = true;
-					break;
-				}
-			}
 			lbl.ForeColor = isValid ? Color.Black : Color.Red;
 			return isValid;
 		}
@@ -354,9 +362,9 @@ namespace WindowsFormsApplication1
 
 		private void ctrl_grade_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			ctrl_bg.Enabled = ctrl_grade.SelectedIndex == 0 || ctrl_grade.SelectedIndex == 3;
+			ctrl_bg.Enabled = ctrl_grade.SelectedIndex == 0;
+			ctrl_hb.Enabled = ctrl_fbs.Enabled = ctrl_grade.SelectedIndex % 3 == 0;
 			ctrl_ast.Enabled = ctrl_alt.Enabled = ctrl_grade.SelectedIndex == 6 || ctrl_grade.SelectedIndex == 9;
-			ctrl_hb.Enabled = ctrl_fbs.Enabled = ctrl_bg.Enabled || ctrl_ast.Enabled;
 		}
 
 		private void ctrl_obesity_CheckedChanged(object sender, EventArgs e)
